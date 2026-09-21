@@ -1,558 +1,638 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brew Cafe | Coffee & Food</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+  </head>
 
-<body class="max-w-[1400px] mx-auto">
-    <header class=" max-w-full mx-auto border-b border-[#eadfdb] bg-[#fffaf8]">
+  <body class="max-w-[1400px] mx-auto">
+    <!-- Header Section  -->
+    <header class="max-w-full mx-auto border-b border-[#eadfdb] bg-[#fffaf8]">
+      <nav class="mx-auto flex h-16 items-center justify-between px-12">
+        <div class="flex items-center gap-3">
+          <img src="images/Brew Cafe Logo.png" alt="" class="object-contain" />
+          <div>
+            <h2 class="text-xl font-semibold text-[#3b211c]">Brew Cafe</h2>
+            <p class="text-[8px] tracking-widest text-[#6b514b]">
+              ARTISANAL ROASTERS
+            </p>
+          </div>
+        </div>
 
-        <nav class="mx-auto flex h-16 items-center justify-between px-12">
-            <div class="flex items-center gap-3">
-                <img src="images/Brew Cafe Logo.png" alt="" class="h-30 w-30 object-contain">
-                <div>
-                    <h2 class="text-xl font-semibold text-[#3b211c]">
-                        Brew Cafe
-                    </h2>
-                    <p class="text-[8px] tracking-widest text-[#6b514b]">ARTISANAL ROASTERS</p>
-                </div>
-            </div>
+        <div class="flex items-center gap-8">
+          <a href="index.html" class="text-sm text-[#3b211c]">Home</a>
+          <a href="menu.html" class="text-sm text-[#3b211c]">Menu</a>
+          <a href="gallery.html" class="text-sm text-[#3b211c]">Gallery</a>
+          <a href="contact.html" class="text-sm text-[#3b211c]">Contact</a>
+        </div>
 
-            <div class="flex items-center gap-8">
-                <a href="index.html" class="text-sm text-[#3b211c]">Home</a>
-                <a href="menu.html" class="text-sm text-[#3b211c]">Menu</a>
-                <a href="gallery.html" class="text-sm text-[#3b211c]">Gallery</a>
-                <a href="contact.html" class="text-sm text-[#3b211c]">Contact</a>
-            </div>
+        <div class="flex items-center gap-3">
+          <a
+            href="contact.html"
+            class="rounded-md bg-[#3b211c] px-5 py-2 text-sm text-white"
+            >Order Online</a
+          >
 
-            <div class="flex items-center gap-3">
-                <a href="contact.html" class="rounded-md bg-[#3b211c] px-5 py-2 text-sm text-white">Order Online</a>
-
-                <button class="flex h-8 w-8 items-center justify-center rounded-full bg-[#3b211c] text-white">
-                    <i class="fa-regular fa-user"></i>
-                </button>
-            </div>
-
-        </nav>
+          <button
+            class="flex h-8 w-8 items-center justify-center rounded-full bg-[#3b211c] text-white"
+          >
+            <i class="fa-regular fa-user"></i>
+          </button>
+        </div>
+      </nav>
     </header>
 
-    <main>
-
-        <section class=" bg-[#fffaf8]  px-4 sm:px-6 lg:px-12 py-8">
-
-            <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
-                <!-- Left Content -->
-                <div>
-
-                    <span class="rounded-full bg-[#f9e9df] px-3 py-1 text-xs text-[#8b5e3c]">
-                        ● CAMPUS TOWN • OPEN TODAY UNTIL 8 PM
-                    </span>
-
-                    <h1 class="mt-6 text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight text-[#3b211c]">
-                        Freshly Brewed Moments,
-                        <span class="block italic text-[#9a641f]">
-                            Crafted With Passion.
-                        </span>
-                    </h1>
-
-                    <p class="mt-5 w-full lg:w-4/5 text-sm sm:text-base  leading-6 text-gray-600">
-                        Step into your neighborhood sanctuary for single-origin
-                        roasts, buttery artisanal pastries, and quiet study corners
-                        designed for inspired thinking.
-                    </p>
-
-                    <div class="mt-6 flex flex-col sm:flex-row gap-4">
-
-                        <a href="menu.html" class="rounded-md bg-[#3b211c] px-6 py-3 text-sm text-white text-center">
-                            Explore Our Menu →
-                        </a>
-
-                        <a href="#" class="rounded-md bg-[#f9e9df] px-6 py-3 text-sm text-[#3b211c] text-center">
-                            ▣ Visit Brew Cafe
-                        </a>
-
-                    </div>
-
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-4 mt-10">
-
-                        <!-- Circular Icons -->
-                        <div class="flex items-center">
-
-                            <div class="w-10 h-10 rounded-full bg-[#f9e5e2] 
-                    flex items-center justify-center z-30">
-                                ☕
-                            </div>
-
-                            <div class="w-10 h-10 rounded-full bg-[#f8bd62] 
-                    flex items-center justify-center -ml-2 z-20">
-                                ★
-                            </div>
-
-                            <div class="w-10 h-10 rounded-full bg-[#3b2525] 
-                    flex items-center justify-center -ml-2 z-10 text-white">
-                                ▰
-                            </div>
-
-                        </div>
-
-                        <!-- Text -->
-                        <p class="text-gray-600 text-sm md:text-base">
-                            Beloved morning ritual for 1,200+ students, faculty &amp;
-                            roastery enthusiasts daily.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Right Image -->
-                <div class=" relative w-full">
-
-                    <img src="images/coffe.png" alt="Coffee at Brew Cafe"
-                        class="h-[300px] sm:h-[400px] lg:h-[476px] w-full rounded-xl object-cover shadow-md">
-
-                    <div
-                        class="bg-[#FFF8F7] w-auto  absolute bottom-5 left-3 right-3 sm:left-6 sm:right-6 lg:left-14 lg:right-auto p-4 rounded-lg flex flex-col sm:flex-row justify-between gap-3 shadow-xl">
-                        <div>
-                            <p class="text-[#845415] text-base font-bold ">SIGNATURE ROAST</p>
-                            <p class="text-[#271310] text-xl font-bold">Ethiopian Yirgacheffe Pour-Over</p>
-                        </div>
-
-                        <div class="sm:ml-4 ">
-                            <div class="w-[100px] h-6 bg-[#FFE9E6] rounded-full">
-                                <p class="text-[#845415] px-4">$4.75</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-            <div
-                class="max-w-6xl mx-auto bg-[#FFF0EE] mt-10  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-4 sm:p-6 lg:p-8">
-
-                <div class="flex p-3">
-                    <img src="images/Background+Shadow.png" alt="" class="w-10 h-10 object-contain">
-                    <div class="px-3">
-                        <h3 class="font-bold text-base">100% Organic</h3>
-                        <p class="text-[#504442] text-xs">Single-origin beans</p>
-                    </div>
-                </div>
-                <div class="flex p-3">
-                    <img src="images/Background+Shadow (1).png" alt="" class="w-10 h-10 object-contain">
-                    <div class="px-3">
-                        <h3 class="font-bold text-base">Fresh Daily Baking</h3>
-                        <p class="text-[#504442] text-xs">From 6:30 AM ovens</p>
-                    </div>
-                </div>
-                <div class="flex p-3">
-                    <img src="images/wifi.png" alt="" class="w-10 h-10 object-contain">
-                    <div class="px-3">
-                        <h3 class="font-bold text-base">Free High-Speed Wi-
-                            Fi</h3>
-                        <p class="text-[#504442] text-xs">Gigabit mesh campus sync</p>
-                    </div>
-                </div>
-                <div class="flex p-3">
-                    <img src="images/book.png" alt="" class="w-10 h-10 object-contain">
-                    <div class="px-3">
-                        <h3 class="font-bold text-base">Cozy Study Spaces</h3>
-                        <p class="text-[#504442] text-xs">Outlets at every seat</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="bg-white px-4 sm:px-6 lg:px-12 py-16 lg:py-[100px] ">
-            <!-- Left Content -->
-            <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-12">
-                <div>
-                    <span class=" text-xs text-[#8b5e3c] font-bold">
-                        ● OUR HERITAGE & PHILOSOPHY
-                    </span>
-                    <h1 class="mt-6 text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight text-[#271310]">
-                        Welcome to Brew Cafe: <br> Where Campus Pace Slows Down.
-                    </h1>
-
-                    <p class="text-[#504442] text-sm sm:text-base font-medium mt-6 lg:mt-10 leading-6">
-                        Established just two blocks off the main university quad on College Avenue,
-                        Brew Cafe started with a singular conviction: good coffee is not just fuel for
-                        midnight deadlines, but an invitation to pause, connect, and savor the
-                        nuance of honest craft.</p>
-
-                    <p class="text-[#504442] text-sm sm:text-base font-medium mt-6 lg:mt-10 leading-6">Every batch of
-                        our beans is ethically procured
-                        directly from regenerative
-                        micro-lots across Latin America and East Africa. Our baristas dial in the
-                        espresso extraction each morning to honor the altitude, soil, and farmers
-                        who nurture every harvest
-                        .</p>
-
-                    <div>
-                        <div class="max-w-lg mt-8 lg:mt-10 p-4 sm:p-6 bg-[#FFF0EE] rounded-xl shadow-md">
-                            <h2 class="italic text-xl font-semibold pt-5">“We don’t rush espresso. We curate genuine
-                                warmth
-                                for scholars, dreamers, and early morning
-                                bookworms alike.”</h2>
-
-                            <div class="flex mt-5 ">
-                                <div
-                                    class="w-[46px] h-[46px] bg-[#845415] rounded-full text-center py-2 font-bold text-white">
-                                    M
-                                </div>
-                                <div class="px-3">
-                                    <h2 class="text-lg font-bold">Mateo Ramirez</h2>
-                                    <p class="text-sm font-semibold">Head Roaster & Co-Founder</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mt-10 ">
-                            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6 px-2 sm:px-0 ">
-                                <li class="text-sm sm:text-base font-semibold text-[#271310]">
-                                    <i class="fa-regular fa-circle-check text-[#845415]"></i>
-                                    Direct Trade Certified
-                                </li>
-                                <li class="text-sm sm:text-base font-semibold text-[#271310]">
-                                    <i class="fa-regular fa-circle-check text-[#845415]"></i>
-                                    Plant-Based Oat & Almond Milks
-                                </li>
-                                <li class="text-sm sm:text-base font-semibold text-[#271310]">
-                                    <i class="fa-regular fa-circle-check text-[#845415]"></i>
-                                    Acoustic Lo-Fi Playlists
-                                </li>
-                                <li class="text-sm sm:text-base font-semibold text-[#271310]">
-                                    <i class="fa-regular fa-circle-check text-[#845415]"></i>
-                                    15% Valid Student Card Perk
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Right Image -->
-                <div class="w-full ">
-                    <img src="images/communit living room.png" alt="" class="w-full rounded-xl object-cover">
-                </div>
-            </div>
-        </section>
-
-        <section class=" bg-[#fffaf8]  px-4 sm:px-6 lg:px-20 py-8">
-            <div class="relative max-w-6xl mx-auto">
-                <span class=" text-xs text-[#8b5e3c] font-bold">THE BREW EXPERIENCE</span>
-                <h1 class="mt-6 text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight text-[#271310]">
-                    Curated For Taste, Made For Your Day.
-                </h1>
-                <p class="text-[#504442] text-sm sm:text-base font-medium mt-6 lg:mt-8 leading-6 max-w-2xl">
-                    Explore the three core pillars that make our College Avenue retreat the daily haven for
-                    discerning palates and focused minds.
-                </p>
-
-                <div class="mt-4 lg:absolute lg:bottom-0 lg:right-0">
-                    <span class="text-[#504442] font-medium text-sm">Swipe to explore crafts</span>
-                    <i class="fa-solid fa-arrow-right-long text-[#845415]"></i>
-                </div>
-            </div>
-
-            <div
-                class="max-w-6xl mx-auto  mt-10  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-4 sm:p-6 lg:p-8 gap-10">
-                <div class="bg-white rounded-md relative shadow-md overflow-hidden">
-                    <img src="images/Single-Origin Craft.png" alt=""
-                        class="w-full h-[220px] sm:h-[240px] lg:h-[250px] object-cover">
-                    <div class="bg-[#FFF8F7] text-[#271310] absolute top-2 left-1 rounded-full text-sm font-medium p-2">
-                        Single-Origin Craft
-                    </div>
-
-                    <div class=" px-2 sm:px-3 lg:px-5 py-5">
-                        <img src="images/coffe-making.png" alt="">
-
-                        <h2 class="text-[#271310] text-xl font-bold my-3">
-                            Artisan Roast Mastery
-                        </h2>
-
-                        <p class="text-[#504442] text-sm font-medium mb-2">
-                            Small-batch roasted arabica beans
-                            extracted with precision espresso craft.
-                            Temperature-profiled shots and custom
-                            manual brew bars designed to awaken your
-                            senses.
-                        </p>
-                    </div>
-                    <div
-                        class="bg-[#FFF8F7] text-[#271310] rounded-lg w-auto mx-3 sm:mx-4  p-2 mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                        <span class="text-sm font-medium">
-                            <i class="fa-regular fa-circle-check text-[#845415]"></i>
-                            In-House Micro Roasting
-                        </span>
-                        <p class="text-sm font-medium text-[#845415] ">18+ Origins</p>
-
-                    </div>
-
-                </div>
-                <div class="bg-white rounded-md relative shadow-md overflow-hidden">
-                    <img src="images/food.png" alt="" class="w-full h-[220px] sm:h-[240px] lg:h-[250px] object-cover">
-                    <div class="bg-[#FFF8F7] text-[#271310] absolute top-2 left-1 rounded-full text-sm font-medium p-2">
-                        Scratch Kitchen
-                    </div>
-
-                    <div class=" px-2 sm:px-3 lg:px-5 py-5">
-                        <img src="images/Scratch Kitchen.png" alt="">
-
-                        <h2 class="text-[#271310] text-xl font-bold my-3">
-                            Scratch Kitchen
-                        </h2>
-
-                        <p class="text-[#504442] text-sm font-medium mb-2">
-                            Flaky butter croissants, cardamom
-                            cinnamon swirls, and gluten-free morning
-                            treats baked fresh every morning by our
-                            dedicated neighborhood pastry artisans.
-                        </p>
-                    </div>
-                    <div
-                        class="bg-[#FFF8F7] text-[#271310] rounded-lg w-auto mx-3 sm:mx-4 p-2 mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                        <span class="text-sm font-medium">
-                            <i class="fa-solid fa-stopwatch text-[#845415]"></i>
-                            Warm From Oven 7 AM
-                        </span>
-                        <p class="text-sm font-medium text-[#845415] ">GF & Vegan Options</p>
-
-                    </div>
-
-                </div>
-
-                <div class="bg-white rounded-md relative shadow-md overflow-hidden">
-                    <img src="images/campus.png" alt="" class="w-full h-[220px] sm:h-[240px] lg:h-[250px] object-cover">
-                    <div class="bg-[#FFF8F7] text-[#271310] absolute top-2 left-1 rounded-full text-sm font-medium p-2">
-                        Campus Friendly
-                    </div>
-
-                    <div class=" px-2 sm:px-3 lg:px-5 py-5">
-                        <img src="images/Campus Friendly.png" alt="">
-
-                        <h2 class="text-[#271310] text-xl font-bold my-3">
-                            Cozy Work & Study Hub
-                        </h2>
-
-                        <p class="text-[#504442] text-sm font-medium mb-2">
-                            Ample USB-C and standard outlets at every
-                            booth, ergonomic seating, soft curated lo-fi
-                            acoustics, and special discounts for college
-                            students & university faculty.
-                        </p>
-                    </div>
-                    <div
-                        class="bg-[#FFF8F7] text-[#271310] rounded-lg w-auto mx-3 sm:mx-4  p-2 mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                        <span class="text-sm font-medium">
-                            <i class="fa-solid fa-gauge-simple-high text-[#845415]"></i>
-                            1 Gbps Fiber Mesh
-                        </span>
-                        <p class="text-sm font-medium text-[#845415] ">15% Off w/ ID</p>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-        </section>
-
-        <section class=" bg-[#fffaf8]  px-4 sm:px-6 lg:px-20 py-8">
-            <div
-                class="bg-[#271310] max-w-6xl mx-auto flex flex-col lg:flex-row mt-10  p-4 sm:p-6 lg:p-8 shadow-2xl rounded-xl gap-6">
-                <div class="max-w-xl">
-                    <div
-                        class="bg-white/15 w-[200px] h-8 text-center  text-[#FDBD75] text-xs font-medium p-2 rounded-lg">
-                        BARISTA SPECIAL OF THE WEEK
-                    </div>
-
-                    <h2 class="text-white text-3xl sm:text-4xl lg:text-5xl py-2 sm:py-3 lg:py-5 ">
-                        Ready for Your Daily Dose?</h2>
-
-                    <p class="text-[#F6DDD9] text-base font-medium">
-                        Order ahead for express pick-up on your walk to campus, or
-                        sit down and let our baristas craft your personal midday
-                        respite.
-                    </p>
-
-                    <div class="mt-6 flex flex-col sm:flex-row gap-4">
-
-
-                        <a href="#"
-                            class="rounded-md bg-[#845415] px-6 py-3 text-sm font-semibold text-white text-center">View
-                            Full Menu
-                            <i class="fa-solid fa-utensils"></i>
-                        </a>
-
-
-                        <a href="#contact"
-                            class="rounded-md bg-white/10 px-6 py-3 text-sm font-semibold text-white text-center">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                            Order For Pickup
-
-                        </a>
-                    </div>
-
-                </div>
-                <div class="bg-white w-full max-w-[414px] mx-auto mt-2  p-4 shadow-md rounded-2xl">
-                    <div class="mt-2 flex justify-between items-center ">
-                        <div
-                            class="bg-[#FDBD75]/40 w-[200px] h-8 text-center text-[#784A0A] text-xs font-medium p-2 rounded-full">
-                            TODAY’S FEATURED DRINK
-                        </div>
-
-                        <p class="text-[#845415] font-bold text-xl">$5.50</p>
-                    </div>
-
-                    <h3 class="font-bold text-xl p-2 ">Vanilla Bean Cold Foam Latte</h3>
-                    <p class="text-[#504442] text-xs p-2 ">
-                        Slow-steeped cold brew infused with organic Madagascar
-                        vanilla, topped with a velvety, house-whipped sweet
-                        cream foam and a dusting of shaved dark cacao.
-                    </p>
-                    <div class="mt-2 flex flex-wrap gap-2 ">
-                        <div
-                            class="bg-[#FFE9E6]/40 px-4 py-2  text-center text-[#271310] text-xs font-bold p-2 rounded-full">
-                            Velvety
-                        </div>
-                        <div
-                            class="bg-[#FFE9E6]/40 px-4 py-2 h-8 text-center text-[#271310] text-xs font-bold p-2 rounded-full">
-                            Low Acidity
-                        </div>
-                        <div
-                            class="bg-[#FFE9E6]/40 px-4 py-2 h-8 text-center text-[#271310] text-xs font-bold p-2 rounded-full">
-                            Organic Dairy or Oat
-                        </div>
-
-                    </div>
-                    <div class="mt-2 p-2 flex justify-between items-center ">
-                        <div class="text-xs text-[#504442]">
-                            <i class="fa-regular fa-thumbs-up text-[#845415]"></i>
-                            <span>Recommended by 98% of morning visitors</span>
-                        </div>
-                        <div
-                            class="flex h-8 w-8 items-center justify-center shrink-0 rounded-full bg-[#3b211c] text-white font-bold text-center">
-                            <i class="fa-solid fa-plus"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer class=" bg-[#3E2723] px-4 sm:px-6 lg:px-20 py-8">
-          <div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div>
-                <h2 class="text-white text-2xl font-bold mb-5 ">Brew Cafe</h2>
-                <p class="text-[#F6DDD9]/90 text-sm ">
-                    Crafting cozy moments & artisanal coffee every day.
-                </p>
-
-                <ul class=" flex h-16 gap-3 mt-5">
-                    <li  class="flex h-8 w-8 items-center justify-center shrink-0 rounded-full bg-white/10 text-white font-bold text-center">
-                        <a href="#"><i class="fa-regular fa-camera"></i></a>
-                    </li>
-                    <li  class="flex h-8 w-8 items-center justify-center shrink-0 rounded-full bg-white/10 text-white font-bold text-center">
-                        <a href="#"><i class="fa-solid fa-earth-asia"></i></a>
-                    </li>
-                    <li  class="flex h-8 w-8 items-center justify-center shrink-0 rounded-full bg-white/10 text-white font-bold text-center">
-                        <a href="#"><i class="fa-regular fa-message"></i></a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="mx-auto ">
-                    <h3 class="text-white text-lg font-semibold mb-2">
-                        Quick Links
-                    </h3>
-
-                    <ul class="text-[#F6DDD9]/80 text-sm ">
-                        <li class="mb-2">
-                            <a href="#home">Home</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#">Our Story / Highlights</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#menu">Menu</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#gallery">Gallery</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-            </div>
-
-            <div  class="mx-auto ">
-                <h3 class="text-white text-lg font-semibold mb-2">Hours & Location</h3>
-
-                <ul class=" text-white text-xs font-semibold">
-                    <li class="mb-3">
-                        <i class="fa-regular fa-clock text-[#FDBD75]"></i>
-                        <span>Mon - Fri</span>
-                        <p class="px-5 text-[#F6DDD9]/80">7:00 AM - 8:00 PM</p>
-                    </li>
-                    <li class="mb-3">
-                        <i class="fa-regular fa-clock text-[#FDBD75]"></i>
-                        <span>Sat - Sun</span>
-                        <p class="px-5 text-[#F6DDD9]/80">8:00 AM - 9:00 PM</p>
-                    </li>
-                    <li class="mb-3 text-[#F6DDD9]/80">
-                        <i class="fa-solid fa-location-dot text-[#FDBD75]"></i>
-                        <span>142 College Avenue, Campus
-Town</span>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="mx-auto ">
-                <h2 class="text-white text-lg font-semibold mb-2" >
-                    Daily Brew Perks
-                </h2>
-                <p class=" text-[#F6DDD9]/80">
-                    Subscribe for sunrise roasts, secret
-bakery drops, and collegiate study
-lounge perks.
-                </p>
-                <form class="mt-4 flex flex-col sm:flex-row gap-2">
-                    <input type="email"  placeholder="Your email address" class="rounded-md lg:mx-auto w-full p">
-                     <button type="submit"  class="rounded-md bg-[#845415] px-6 py-2 text-sm font-semibold text-white">Join</button>
-                </form>
-
-                <p class=" text-[#F6DDD9]/80 mt-2">
-                    Fresh beans roasted every Tuesday &
-Friday.
-                </p>
-                
-            </div>
-            
-          </div>
-
-          <div class="mt-10 border-t border-[#F6DDD9]/10 text-center ">
-
-            <p class="mt-10 text-[#F6DDD9]/75 font-medium text-xs">
-                © 2025 Brew Cafe. Crafted for college assignment web showcase.
+    <main class="w-10px">
+      <!-- Hero Section -->
+      <section class="bg-[#fffaf8] px-4 sm:px-6 lg:px-12 py-8">
+        <div
+          class="mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10"
+        >
+          <!-- Left Content -->
+          <div>
+            <span
+              class="rounded-full bg-[#f9e9df] px-3 py-1 text-xs text-[#8b5e3c]"
+            >
+              ● CAMPUS TOWN • OPEN TODAY UNTIL 8 PM
+            </span>
+
+            <h1
+              class="mt-6 text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight text-[#3b211c]"
+            >
+              Freshly Brewed Moments,
+              <span class="block italic text-[#9a641f]">
+                Crafted With Passion.
+              </span>
+            </h1>
+
+            <p
+              class="mt-5 w-full lg:w-4/5 text-sm sm:text-base leading-6 text-gray-600"
+            >
+              Step into your neighborhood sanctuary for single-origin roasts,
+              buttery artisanal pastries, and quiet study corners designed for
+              inspired thinking.
             </p>
 
+            <div class="mt-6 flex flex-col sm:flex-row gap-4">
+              <a
+                href="menu.html"
+                class="rounded-md bg-[#3b211c] px-6 py-3 text-sm text-white text-center"
+              >
+                Explore Our Menu →
+              </a>
+
+              <a
+                href="#"
+                class="rounded-md bg-[#f9e9df] px-6 py-3 text-sm text-[#3b211c] text-center"
+              >
+                ▣ Visit Brew Cafe
+              </a>
+            </div>
+
+            <div class="flex flex-col sm:flex-row sm:items-center gap-4 mt-10">
+              <!-- Circular Icons -->
+              <div class="flex items-center">
+                <div
+                  class="w-10 h-10 rounded-full bg-[#f9e5e2] flex items-center justify-center z-30"
+                >
+                  ☕
+                </div>
+
+                <div
+                  class="w-10 h-10 rounded-full bg-[#f8bd62] flex items-center justify-center -ml-2 z-20"
+                >
+                  ★
+                </div>
+
+                <div
+                  class="w-10 h-10 rounded-full bg-[#3b2525] flex items-center justify-center -ml-2 z-10 text-white"
+                >
+                  ▰
+                </div>
+              </div>
+
+              <!-- Text -->
+              <p class="text-gray-600 text-sm md:text-base">
+                Beloved morning ritual for 1,200+ students, faculty &amp;
+                roastery enthusiasts daily.
+              </p>
+            </div>
           </div>
 
-        </footer>
+          <!-- Right Image -->
+          <div class="relative w-full">
+            <img
+              src="images/coffe.png"
+              alt="Coffee at Brew Cafe"
+              class="h-[300px] sm:h-[400px] lg:h-[476px] w-full rounded-xl object-cover shadow-md"
+            />
 
+            <div
+              class="bg-[#FFF8F7] w-auto absolute bottom-5 left-3 right-3 sm:left-6 sm:right-6 lg:left-14 lg:right-auto p-4 rounded-lg flex flex-col sm:flex-row justify-between gap-3 shadow-xl"
+            >
+              <div>
+                <p class="text-[#845415] text-base font-bold">
+                  SIGNATURE ROAST
+                </p>
+                <p class="text-[#271310] text-xl font-bold">
+                  Ethiopian Yirgacheffe Pour-Over
+                </p>
+              </div>
 
+              <div class="sm:ml-4">
+                <div class="w-[100px] h-6 bg-[#FFE9E6] rounded-full">
+                  <p class="text-[#845415] px-4">$4.75</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="mx-auto bg-[#FFF0EE] mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-4 sm:p-6 lg:p-8"
+        >
+          <div class="flex p-3">
+            <img
+              src="images/Background+Shadow.png"
+              alt=""
+              class="w-10 h-10 object-contain"
+            />
+            <div class="px-3">
+              <h3 class="font-bold text-base">100% Organic</h3>
+              <p class="text-[#504442] text-xs">Single-origin beans</p>
+            </div>
+          </div>
+          <div class="flex p-3">
+            <img
+              src="images/Background+Shadow (1).png"
+              alt=""
+              class="w-10 h-10 object-contain"
+            />
+            <div class="px-3">
+              <h3 class="font-bold text-base">Fresh Daily Baking</h3>
+              <p class="text-[#504442] text-xs">From 6:30 AM ovens</p>
+            </div>
+          </div>
+          <div class="flex p-3">
+            <img
+              src="images/wifi.png"
+              alt=""
+              class="w-10 h-10 object-contain"
+            />
+            <div class="px-3">
+              <h3 class="font-bold text-base">Free High-Speed Wi- Fi</h3>
+              <p class="text-[#504442] text-xs">Gigabit mesh campus sync</p>
+            </div>
+          </div>
+          <div class="flex p-3">
+            <img
+              src="images/book.png"
+              alt=""
+              class="w-10 h-10 object-contain"
+            />
+            <div class="px-3">
+              <h3 class="font-bold text-base">Cozy Study Spaces</h3>
+              <p class="text-[#504442] text-xs">Outlets at every seat</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- OUR HERITAGE & PHILOSOPHY Section  -->
+      <section class="bg-white px-4 sm:px-6 lg:px-12 py-16 lg:py-[100px]">
+        <!-- Left Content -->
+        <div
+          class="mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-12"
+        >
+          <div>
+            <span class="text-xs text-[#8b5e3c] font-bold">
+              ● OUR HERITAGE & PHILOSOPHY
+            </span>
+            <h1
+              class="mt-6 text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight text-[#271310]"
+            >
+              Welcome to Brew Cafe: <br />
+              Where Campus Pace Slows Down.
+            </h1>
+
+            <p
+              class="text-[#504442] text-sm sm:text-base font-medium mt-6 lg:mt-10 leading-6"
+            >
+              Established just two blocks off the main university quad on
+              College Avenue, Brew Cafe started with a singular conviction: good
+              coffee is not just fuel for midnight deadlines, but an invitation
+              to pause, connect, and savor the nuance of honest craft.
+            </p>
+
+            <p
+              class="text-[#504442] text-sm sm:text-base font-medium mt-6 lg:mt-10 leading-6"
+            >
+              Every batch of our beans is ethically procured directly from
+              regenerative micro-lots across Latin America and East Africa. Our
+              baristas dial in the espresso extraction each morning to honor the
+              altitude, soil, and farmers who nurture every harvest .
+            </p>
+
+            <div>
+              <div
+                class="max-w-lg mt-8 lg:mt-10 p-4 sm:p-6 bg-[#FFF0EE] rounded-xl shadow-md"
+              >
+                <h2 class="italic text-xl font-semibold pt-5">
+                  “We don’t rush espresso. We curate genuine warmth for
+                  scholars, dreamers, and early morning bookworms alike.”
+                </h2>
+
+                <div class="flex mt-5">
+                  <div
+                    class="w-[46px] h-[46px] bg-[#845415] rounded-full text-center py-2 font-bold text-white"
+                  >
+                    M
+                  </div>
+                  <div class="px-3">
+                    <h2 class="text-lg font-bold">Mateo Ramirez</h2>
+                    <p class="text-sm font-semibold">
+                      Head Roaster & Co-Founder
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-10">
+                <ul
+                  class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6 px-2 sm:px-0"
+                >
+                  <li class="text-sm sm:text-base font-semibold text-[#271310]">
+                    <i class="fa-regular fa-circle-check text-[#845415]"></i>
+                    Direct Trade Certified
+                  </li>
+                  <li class="text-sm sm:text-base font-semibold text-[#271310]">
+                    <i class="fa-regular fa-circle-check text-[#845415]"></i>
+                    Plant-Based Oat & Almond Milks
+                  </li>
+                  <li class="text-sm sm:text-base font-semibold text-[#271310]">
+                    <i class="fa-regular fa-circle-check text-[#845415]"></i>
+                    Acoustic Lo-Fi Playlists
+                  </li>
+                  <li class="text-sm sm:text-base font-semibold text-[#271310]">
+                    <i class="fa-regular fa-circle-check text-[#845415]"></i>
+                    15% Valid Student Card Perk
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Image -->
+          <div class="w-full">
+            <img
+              src="images/communit living room.png"
+              alt=""
+              class="w-full rounded-xl object-cover"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Cards Section  -->
+      <section class="bg-[#fffaf8] px-4 sm:px-6 lg:px-20 py-8">
+        <div class="relative max-w-6xl mx-auto">
+          <span class="text-xs text-[#8b5e3c] font-bold"
+            >THE BREW EXPERIENCE</span
+          >
+          <h1
+            class="mt-6 text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight text-[#271310]"
+          >
+            Curated For Taste, Made For Your Day.
+          </h1>
+          <p
+            class="text-[#504442] text-sm sm:text-base font-medium mt-6 lg:mt-8 leading-6 max-w-2xl"
+          >
+            Explore the three core pillars that make our College Avenue retreat
+            the daily haven for discerning palates and focused minds.
+          </p>
+
+          <div class="mt-4 lg:absolute lg:bottom-0 lg:right-0">
+            <span class="text-[#504442] font-medium text-sm"
+              >Swipe to explore crafts</span
+            >
+            <i class="fa-solid fa-arrow-right-long text-[#845415]"></i>
+          </div>
+        </div>
+
+        <div
+          class="mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-4 sm:p-6 lg:p-8 gap-10"
+        >
+          <div class="bg-white rounded-md relative shadow-md overflow-hidden">
+            <img
+              src="images/Single-Origin Craft.png"
+              alt=""
+              class="w-full h-[220px] sm:h-[240px] lg:h-[250px] object-cover"
+            />
+            <div
+              class="bg-[#FFF8F7] text-[#271310] absolute top-2 left-1 rounded-full text-sm font-medium p-2"
+            >
+              Single-Origin Craft
+            </div>
+
+            <div class="px-2 sm:px-3 lg:px-5 py-5">
+              <img src="images/coffe-making.png" alt="" />
+
+              <h2 class="text-[#271310] text-xl font-bold my-3">
+                Artisan Roast Mastery
+              </h2>
+
+              <p class="text-[#504442] text-sm font-medium mb-2">
+                Small-batch roasted arabica beans extracted with precision
+                espresso craft. Temperature-profiled shots and custom manual
+                brew bars designed to awaken your senses.
+              </p>
+            </div>
+            <div
+              class="bg-[#FFF8F7] text-[#271310] rounded-lg w-auto mx-3 sm:mx-4 p-2 mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2"
+            >
+              <span class="text-sm font-medium">
+                <i class="fa-regular fa-circle-check text-[#845415]"></i>
+                In-House Micro Roasting
+              </span>
+              <p class="text-sm font-medium text-[#845415]">18+ Origins</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-md relative shadow-md overflow-hidden">
+            <img
+              src="images/food.png"
+              alt=""
+              class="w-full h-[220px] sm:h-[240px] lg:h-[250px] object-cover"
+            />
+            <div
+              class="bg-[#FFF8F7] text-[#271310] absolute top-2 left-1 rounded-full text-sm font-medium p-2"
+            >
+              Scratch Kitchen
+            </div>
+
+            <div class="px-2 sm:px-3 lg:px-5 py-5">
+              <img src="images/Scratch Kitchen.png" alt="" />
+
+              <h2 class="text-[#271310] text-xl font-bold my-3">
+                Scratch Kitchen
+              </h2>
+
+              <p class="text-[#504442] text-sm font-medium mb-2">
+                Flaky butter croissants, cardamom cinnamon swirls, and
+                gluten-free morning treats baked fresh every morning by our
+                dedicated neighborhood pastry artisans.
+              </p>
+            </div>
+            <div
+              class="bg-[#FFF8F7] text-[#271310] rounded-lg w-auto mx-3 sm:mx-4 p-2 mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2"
+            >
+              <span class="text-sm font-medium">
+                <i class="fa-solid fa-stopwatch text-[#845415]"></i>
+                Warm From Oven 7 AM
+              </span>
+              <p class="text-sm font-medium text-[#845415]">
+                GF & Vegan Options
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-md relative shadow-md overflow-hidden">
+            <img
+              src="images/campus.png"
+              alt=""
+              class="w-full h-[220px] sm:h-[240px] lg:h-[250px] object-cover"
+            />
+            <div
+              class="bg-[#FFF8F7] text-[#271310] absolute top-2 left-1 rounded-full text-sm font-medium p-2"
+            >
+              Campus Friendly
+            </div>
+
+            <div class="px-2 sm:px-3 lg:px-5 py-5">
+              <img src="images/Campus Friendly.png" alt="" />
+
+              <h2 class="text-[#271310] text-xl font-bold my-3">
+                Cozy Work & Study Hub
+              </h2>
+
+              <p class="text-[#504442] text-sm font-medium mb-2">
+                Ample USB-C and standard outlets at every booth, ergonomic
+                seating, soft curated lo-fi acoustics, and special discounts for
+                college students & university faculty.
+              </p>
+            </div>
+            <div
+              class="bg-[#FFF8F7] text-[#271310] rounded-lg w-auto mx-3 sm:mx-4 p-2 mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2"
+            >
+              <span class="text-sm font-medium">
+                <i class="fa-solid fa-gauge-simple-high text-[#845415]"></i>
+                1 Gbps Fiber Mesh
+              </span>
+              <p class="text-sm font-medium text-[#845415]">15% Off w/ ID</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- BARISTA SPECIAL OF THE WEEK Section  -->
+      <section class="bg-[#fffaf8] px-4 sm:px-6 lg:px-20 py-8">
+        <div
+          class="bg-[#271310] mx-auto flex flex-col lg:flex-row mt-10 p-4 sm:p-6 lg:p-8 shadow-2xl rounded-xl gap-6"
+        >
+          <div class="max-w-xl">
+            <div
+              class="bg-white/15 w-[200px] h-8 text-center text-[#FDBD75] text-xs font-medium p-2 rounded-lg"
+            >
+              BARISTA SPECIAL OF THE WEEK
+            </div>
+
+            <h2
+              class="text-white text-3xl sm:text-4xl lg:text-5xl py-2 sm:py-3 lg:py-5"
+            >
+              Ready for Your Daily Dose?
+            </h2>
+
+            <p class="text-[#F6DDD9] text-base font-medium">
+              Order ahead for express pick-up on your walk to campus, or sit
+              down and let our baristas craft your personal midday respite.
+            </p>
+
+            <div class="mt-6 flex flex-col sm:flex-row gap-4">
+              <a
+                href="#"
+                class="rounded-md bg-[#845415] px-6 py-3 text-sm font-semibold text-white text-center"
+                >View Full Menu
+                <i class="fa-solid fa-utensils"></i>
+              </a>
+
+              <a
+                href="#contact"
+                class="rounded-md bg-white/10 px-6 py-3 text-sm font-semibold text-white text-center"
+              >
+                <i class="fa-solid fa-bag-shopping"></i>
+                Order For Pickup
+              </a>
+            </div>
+          </div>
+          <div
+            class="bg-white w-full max-w-[414px] mx-auto mt-2 p-4 shadow-md rounded-2xl"
+          >
+            <div class="mt-2 flex justify-between items-center">
+              <div
+                class="bg-[#FDBD75]/40 w-[200px] h-8 text-center text-[#784A0A] text-xs font-medium p-2 rounded-full"
+              >
+                TODAY’S FEATURED DRINK
+              </div>
+
+              <p class="text-[#845415] font-bold text-xl">$5.50</p>
+            </div>
+
+            <h3 class="font-bold text-xl p-2">Vanilla Bean Cold Foam Latte</h3>
+            <p class="text-[#504442] text-xs p-2">
+              Slow-steeped cold brew infused with organic Madagascar vanilla,
+              topped with a velvety, house-whipped sweet cream foam and a
+              dusting of shaved dark cacao.
+            </p>
+            <div class="mt-2 flex flex-wrap gap-2">
+              <div
+                class="bg-[#FFE9E6]/40 px-4 py-2 text-center text-[#271310] text-xs font-bold p-2 rounded-full"
+              >
+                Velvety
+              </div>
+              <div
+                class="bg-[#FFE9E6]/40 px-4 py-2 h-8 text-center text-[#271310] text-xs font-bold p-2 rounded-full"
+              >
+                Low Acidity
+              </div>
+              <div
+                class="bg-[#FFE9E6]/40 px-4 py-2 h-8 text-center text-[#271310] text-xs font-bold p-2 rounded-full"
+              >
+                Organic Dairy or Oat
+              </div>
+            </div>
+            <div class="mt-2 p-2 flex justify-between items-center">
+              <div class="text-xs text-[#504442]">
+                <i class="fa-regular fa-thumbs-up text-[#845415]"></i>
+                <span>Recommended by 98% of morning visitors</span>
+              </div>
+              <div
+                class="flex h-8 w-8 items-center justify-center shrink-0 rounded-full bg-[#3b211c] text-white font-bold text-center"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- Footer Section   -->
+    <footer class="bg-[#3E2723] px-4 sm:px-6 lg:px-20 py-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <h2 class="text-white text-2xl font-bold mb-5">Brew Cafe</h2>
+          <p class="text-[#F6DDD9]/90 text-sm">
+            Crafting cozy moments & artisanal coffee every day.
+          </p>
 
+          <ul class="flex h-16 gap-3 mt-5">
+            <li
+              class="flex h-8 w-8 items-center justify-center shrink-0 rounded-full bg-white/10 text-white font-bold text-center"
+            >
+              <a href="#"><i class="fa-regular fa-camera"></i></a>
+            </li>
+            <li
+              class="flex h-8 w-8 items-center justify-center shrink-0 rounded-full bg-white/10 text-white font-bold text-center"
+            >
+              <a href="#"><i class="fa-solid fa-earth-asia"></i></a>
+            </li>
+            <li
+              class="flex h-8 w-8 items-center justify-center shrink-0 rounded-full bg-white/10 text-white font-bold text-center"
+            >
+              <a href="#"><i class="fa-regular fa-message"></i></a>
+            </li>
+          </ul>
+        </div>
 
+        <div class="mx-auto">
+          <h3 class="text-white text-lg font-semibold mb-2">Quick Links</h3>
 
-</body>
+          <ul class="text-[#F6DDD9]/80 text-sm">
+            <li class="mb-2">
+              <a href="#home">Home</a>
+            </li>
+            <li class="mb-2">
+              <a href="#">Our Story / Highlights</a>
+            </li>
+            <li class="mb-2">
+              <a href="#menu">Menu</a>
+            </li>
+            <li class="mb-2">
+              <a href="#gallery">Gallery</a>
+            </li>
+            <li class="mb-2">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
 
-</ht
+        <div class="mx-auto">
+          <h3 class="text-white text-lg font-semibold mb-2">
+            Hours & Location
+          </h3>
+
+          <ul class="text-white text-xs font-semibold">
+            <li class="mb-3">
+              <i class="fa-regular fa-clock text-[#FDBD75]"></i>
+              <span>Mon - Fri</span>
+              <p class="px-5 text-[#F6DDD9]/80">7:00 AM - 8:00 PM</p>
+            </li>
+            <li class="mb-3">
+              <i class="fa-regular fa-clock text-[#FDBD75]"></i>
+              <span>Sat - Sun</span>
+              <p class="px-5 text-[#F6DDD9]/80">8:00 AM - 9:00 PM</p>
+            </li>
+            <li class="mb-3 text-[#F6DDD9]/80">
+              <i class="fa-solid fa-location-dot text-[#FDBD75]"></i>
+              <span>142 College Avenue, Campus Town</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mx-auto">
+          <h2 class="text-white text-lg font-semibold mb-2">
+            Daily Brew Perks
+          </h2>
+          <p class="text-[#F6DDD9]/80">
+            Subscribe for sunrise roasts, secret bakery drops, and collegiate
+            study lounge perks.
+          </p>
+          <form class="mt-4 flex flex-col sm:flex-row gap-2">
+            <input
+              type="email"
+              placeholder="Your email address"
+              class="rounded-md w-full p-2"
+            />
+            <button
+              type="submit"
+              class="rounded-md bg-[#845415] px-6 py-2 text-sm font-semibold text-white"
+            >
+              Join
+            </button>
+          </form>
+
+          <p class="text-[#F6DDD9]/80 mt-2">
+            Fresh beans roasted every Tuesday & Friday.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-10 border-t border-[#F6DDD9]/10 text-center">
+        <p class="mt-10 text-[#F6DDD9]/75 font-medium text-xs">
+          © 2026 Brew Cafe. Crafted for college assignment web showcase.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

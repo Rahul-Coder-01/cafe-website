@@ -48,6 +48,7 @@
       </nav>
     </header>
 
+    <!-- Main Section -->
     <main class="w-10px">
       <!-- Hero Section -->
       <section class="bg-[#fffaf8] px-4 sm:px-6 lg:px-12 py-8">
@@ -59,7 +60,8 @@
             <span
               class="rounded-full bg-[#f9e9df] px-3 py-1 text-xs text-[#8b5e3c]"
             >
-              ● CAMPUS TOWN • OPEN TODAY UNTIL 8 PM
+              CAMPUS TOWN <i class="fa-solid fa-minus"></i> OPEN TODAY UNTIL 8
+              PM
             </span>
 
             <h1
@@ -82,16 +84,19 @@
             <div class="mt-6 flex flex-col sm:flex-row gap-4">
               <a
                 href="menu.html"
-                class="rounded-md bg-[#3b211c] px-6 py-3 text-sm text-white text-center"
+                class="rounded-md bg-[#3b211c] px-6 py-3 text-sm text-white text-center transition duration-300 hover:bg-[#845415]"
               >
-                Explore Our Menu →
+                Explore Our Menu
+                <i
+                  class="fa-solid fa-arrow-right hover:translate-x-1 transition duration-300"
+                ></i>
               </a>
 
               <a
                 href="#"
-                class="rounded-md bg-[#f9e9df] px-6 py-3 text-sm text-[#3b211c] text-center"
+                class="rounded-md bg-[#f9e9df] px-6 py-3 text-sm text-[#3b211c] text-center transition duration-300 hover:bg-[#3b211c] hover:text-white"
               >
-                ▣ Visit Brew Cafe
+                Visit Brew Cafe
               </a>
             </div>
 
@@ -99,21 +104,21 @@
               <!-- Circular Icons -->
               <div class="flex items-center">
                 <div
-                  class="w-10 h-10 rounded-full bg-[#f9e5e2] flex items-center justify-center z-30"
+                  class="w-10 h-10 rounded-full bg-[#f9e5e2] flex items-center justify-center z-30 text-[#3b2525]"
                 >
-                  ☕
+                  <i class="fa-solid fa-mug-hot"></i>
                 </div>
 
                 <div
-                  class="w-10 h-10 rounded-full bg-[#f8bd62] flex items-center justify-center -ml-2 z-20"
+                  class="w-10 h-10 rounded-full bg-[#f8bd62] flex items-center justify-center -ml-2 z-20 text-[#3b2525]"
                 >
-                  ★
+                  <i class="fa-solid fa-star"></i>
                 </div>
 
                 <div
                   class="w-10 h-10 rounded-full bg-[#3b2525] flex items-center justify-center -ml-2 z-10 text-white"
                 >
-                  ▰
+                  <i class="fa-solid fa-comment"></i>
                 </div>
               </div>
 
@@ -203,6 +208,7 @@
           </div>
         </div>
       </section>
+
       <!-- OUR HERITAGE & PHILOSOPHY Section  -->
       <section class="bg-white px-4 sm:px-6 lg:px-12 py-16 lg:py-[100px]">
         <!-- Left Content -->
@@ -211,7 +217,8 @@
         >
           <div>
             <span class="text-xs text-[#8b5e3c] font-bold">
-              ● OUR HERITAGE & PHILOSOPHY
+              <i class="fa-solid fa-minus"></i>
+              OUR HERITAGE & PHILOSOPHY
             </span>
             <h1
               class="mt-6 text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight text-[#271310]"
@@ -240,7 +247,7 @@
 
             <div>
               <div
-                class="max-w-lg mt-8 lg:mt-10 p-4 sm:p-6 bg-[#FFF0EE] rounded-xl shadow-md"
+                class="max-w-lg mt-8 lg:mt-10 p-4 sm:p-6 bg-[#FFF0EE] rounded-xl shadow-md transition duration-300 hover:shadow-lg"
               >
                 <h2 class="italic text-xl font-semibold pt-5">
                   “We don’t rush espresso. We curate genuine warmth for
@@ -297,11 +304,13 @@
           </div>
         </div>
       </section>
+
       <!-- Cards Section  -->
       <section class="bg-[#fffaf8] px-4 sm:px-6 lg:px-20 py-8">
-        <div class="relative max-w-6xl mx-auto">
-          <span class="text-xs text-[#8b5e3c] font-bold"
-            >THE BREW EXPERIENCE</span
+        <div class="relative mx-auto">
+          <span class="text-xs text-[#8b5e3c] font-bold">
+            <i class="fa-solid fa-minus"></i>
+            THE BREW EXPERIENCE</span
           >
           <h1
             class="mt-6 text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight text-[#271310]"
@@ -323,10 +332,14 @@
           </div>
         </div>
 
+        <!-- cards -->
         <div
           class="mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-4 sm:p-6 lg:p-8 gap-10"
         >
-          <div class="bg-white rounded-md relative shadow-md overflow-hidden">
+          <!-- card -->
+          <div
+            class="bg-white rounded-md relative shadow-md overflow-hidden transition duration-300 hover:scale-105 hover:shadow-lg"
+          >
             <img
               src="images/Single-Origin Craft.png"
               alt=""
@@ -361,7 +374,11 @@
               <p class="text-sm font-medium text-[#845415]">18+ Origins</p>
             </div>
           </div>
-          <div class="bg-white rounded-md relative shadow-md overflow-hidden">
+
+          <!-- card2 -->
+          <div
+            class="bg-white rounded-md relative shadow-md overflow-hidden transition duration-300 hover:scale-105 hover:shadow-lg"
+          >
             <img
               src="images/food.png"
               alt=""
@@ -399,7 +416,10 @@
             </div>
           </div>
 
-          <div class="bg-white rounded-md relative shadow-md overflow-hidden">
+          <!-- card3 -->
+          <div
+            class="bg-white rounded-md relative shadow-md overflow-hidden transition duration-300 hover:scale-105 hover:shadow-lg"
+          >
             <img
               src="images/campus.png"
               alt=""
@@ -436,6 +456,7 @@
           </div>
         </div>
       </section>
+
       <!-- BARISTA SPECIAL OF THE WEEK Section  -->
       <section class="bg-[#fffaf8] px-4 sm:px-6 lg:px-20 py-8">
         <div
@@ -462,14 +483,15 @@
             <div class="mt-6 flex flex-col sm:flex-row gap-4">
               <a
                 href="#"
-                class="rounded-md bg-[#845415] px-6 py-3 text-sm font-semibold text-white text-center"
-                >View Full Menu
+                class="rounded-md bg-[#845415] px-6 py-3 text-sm font-semibold text-white text-center transition duration-300 hover:bg-[#A36A1B]"
+              >
+                View Full Menu
                 <i class="fa-solid fa-utensils"></i>
               </a>
 
               <a
                 href="#contact"
-                class="rounded-md bg-white/10 px-6 py-3 text-sm font-semibold text-white text-center"
+                class="rounded-md bg-white/10 px-6 py-3 text-sm font-semibold text-white text-center hover:bg-[#6D4A43] transition duration-300"
               >
                 <i class="fa-solid fa-bag-shopping"></i>
                 Order For Pickup
@@ -527,6 +549,7 @@
         </div>
       </section>
     </main>
+
     <!-- Footer Section   -->
     <footer class="bg-[#3E2723] px-4 sm:px-6 lg:px-20 py-8">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -560,19 +583,25 @@
 
           <ul class="text-[#F6DDD9]/80 text-sm">
             <li class="mb-2">
-              <a href="#home">Home</a>
+              <a href="#home" class="transition hover:text-[#FDBD75]">Home</a>
             </li>
             <li class="mb-2">
-              <a href="#">Our Story / Highlights</a>
+              <a href="#" class="transition hover:text-[#FDBD75]"
+                >Our Story / Highlights</a
+              >
             </li>
             <li class="mb-2">
-              <a href="#menu">Menu</a>
+              <a href="#menu" class="transition hover:text-[#FDBD75]">Menu</a>
             </li>
             <li class="mb-2">
-              <a href="#gallery">Gallery</a>
+              <a href="#gallery" class="transition hover:text-[#FDBD75]"
+                >Gallery</a
+              >
             </li>
             <li class="mb-2">
-              <a href="#contact">Contact</a>
+              <a href="#contact" class="transition hover:text-[#FDBD75]"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -616,7 +645,7 @@
             />
             <button
               type="submit"
-              class="rounded-md bg-[#845415] px-6 py-2 text-sm font-semibold text-white"
+              class="rounded-md bg-[#845415] px-6 py-2 text-sm font-semibold text-white transition hover:bg-[#FDBD75] hover:text-[#3E2723]"
             >
               Join
             </button>

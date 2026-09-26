@@ -17,31 +17,60 @@
 
   <body class="max-w-[1400px] mx-auto font-['Poppins']">
     <!-- Header Section -->
-    <header class="max-w-full mx-auto border-b border-[#eadfdb] bg-[#fffaf8]">
-      <nav class="mx-auto flex h-16 items-center justify-between px-12">
-        <div class="flex items-center gap-3">
-          <img src="images/Brew Cafe Logo.png" alt="" class="object-contain" />
-          <div>
-            <h2 class="text-xl font-semibold text-[#3b211c]">Brew Cafe</h2>
-            <p class="text-[8px] tracking-widest text-[#6b514b]">
-              ARTISANAL ROASTERS
-            </p>
-          </div>
+    <header class="w-full border-b border-[#eadfdb] bg-[#fffaf8]">
+      <nav
+        class="mx-auto flex min-h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-12 py-3"
+      >
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="index.html">
+            <img
+              src="images/Brew Cafe Logo.png"
+              alt="Brew Cafe Logo"
+              class="w-28 sm:w-32 object-contain"
+            />
+          </a>
         </div>
 
-        <div class="flex items-center gap-8">
-          <a href="index.html" class="text-sm text-[#3b211c]">Home</a>
-          <a href="menu.html" class="text-sm text-[#3b211c]">Menu</a>
-          <a href="gallery.html" class="text-sm text-[#3b211c]">Gallery</a>
-          <a href="contact.html" class="text-sm text-[#3b211c]">Contact</a>
-        </div>
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center gap-6 lg:gap-8">
+          <a
+            href="index.html"
+            class="text-sm text-[#3b211c] hover:text-[#8B1E2D] transition"
+          >
+            Home
+          </a>
 
-        <div class="flex items-center gap-3">
+          <a
+            href="menu.html"
+            class="text-sm text-[#3b211c] hover:text-[#8B1E2D] transition"
+          >
+            Menu
+          </a>
+
+          <a
+            href="gallery.html"
+            class="text-sm text-[#3b211c] hover:text-[#8B1E2D] transition"
+          >
+            Gallery
+          </a>
+
           <a
             href="contact.html"
-            class="rounded-md bg-[#3b211c] px-5 py-2 text-sm text-white"
-            >Order Online</a
+            class="text-sm text-[#3b211c] hover:text-[#8B1E2D] transition"
           >
+            Contact
+          </a>
+        </div>
+
+        <!-- Desktop Buttons -->
+        <div class="hidden md:flex items-center gap-3">
+          <a
+            href="contact.html"
+            class="rounded-md bg-[#3b211c] px-4 lg:px-5 py-2 text-sm text-white hover:bg-[#5a332b] transition"
+          >
+            Order Online
+          </a>
 
           <button
             class="flex h-8 w-8 items-center justify-center rounded-full bg-[#3b211c] text-white"
@@ -49,6 +78,57 @@
             <i class="fa-regular fa-user"></i>
           </button>
         </div>
+
+        <!-- Mobile Menu -->
+        <details class="relative md:hidden">
+          <summary
+            class="flex h-9 w-9 cursor-pointer list-none items-center justify-center rounded-md bg-[#3b211c] text-white"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </summary>
+
+          <!-- Mobile Dropdown -->
+          <div
+            class="absolute right-0 top-12 z-50 w-48 rounded-lg border border-[#eadfdb] bg-[#fffaf8] p-4 shadow-lg"
+          >
+            <div class="flex flex-col gap-3">
+              <a
+                href="index.html"
+                class="rounded-md px-3 py-2 text-sm text-[#3b211c] hover:bg-[#F6DDD9]"
+              >
+                Home
+              </a>
+
+              <a
+                href="menu.html"
+                class="rounded-md px-3 py-2 text-sm text-[#3b211c] hover:bg-[#F6DDD9]"
+              >
+                Menu
+              </a>
+
+              <a
+                href="gallery.html"
+                class="rounded-md px-3 py-2 text-sm text-[#3b211c] hover:bg-[#F6DDD9]"
+              >
+                Gallery
+              </a>
+
+              <a
+                href="contact.html"
+                class="rounded-md px-3 py-2 text-sm text-[#3b211c] hover:bg-[#F6DDD9]"
+              >
+                Contact
+              </a>
+
+              <a
+                href="contact.html"
+                class="rounded-md bg-[#3b211c] px-3 py-2 text-center text-sm text-white"
+              >
+                Order Online
+              </a>
+            </div>
+          </div>
+        </details>
       </nav>
     </header>
 
@@ -214,7 +294,7 @@
                 <span class="text-sm font-medium text-[#827472]">
                   Regular 12oz
                 </span>
-                <p class="text-2xl font-bold text-black">$5.50</p>
+                <p class="text-2xl font-bold text-black">RS. 299</p>
               </div>
 
               <div
@@ -262,7 +342,7 @@
                 <span class="text-sm font-medium text-[#827472]">
                   Double Shot
                 </span>
-                <p class="text-2xl font-bold text-black">$3.75</p>
+                <p class="text-2xl font-bold text-black">RS. 199</p>
               </div>
 
               <div
@@ -311,7 +391,7 @@
                 <span class="text-sm font-medium text-[#827472]">
                   Large 16oz
                 </span>
-                <p class="text-2xl font-bold text-black">$5.85</p>
+                <p class="text-2xl font-bold text-black">RS. 329</p>
               </div>
 
               <div
@@ -359,7 +439,7 @@
                 <span class="text-sm font-medium text-[#827472]">
                   Regular 8oz
                 </span>
-                <p class="text-2xl font-bold text-black">$4.95</p>
+                <p class="text-2xl font-bold text-black">RS. 279</p>
               </div>
 
               <div
@@ -438,7 +518,7 @@
                 <span class="text-sm font-medium text-[#827472]">
                   Warm Pressed
                 </span>
-                <p class="text-2xl font-bold text-black">$8.50</p>
+                <p class="text-2xl font-bold text-black">RS. 449</p>
               </div>
 
               <div
@@ -486,7 +566,7 @@
                 <span class="text-sm font-medium text-[#827472]">
                   Vegetarian
                 </span>
-                <p class="text-2xl font-bold text-black">$7.25</p>
+                <p class="text-2xl font-bold text-black">RS. 349</p>
               </div>
 
               <div
@@ -535,7 +615,7 @@
                 <span class="text-sm font-medium text-[#827472]">
                   Freshly Toasted
                 </span>
-                <p class="text-2xl font-bold text-black">$7.95</p>
+                <p class="text-2xl font-bold text-black">RS. 399</p>
               </div>
 
               <div
@@ -612,7 +692,7 @@
             >
               <div>
                 <span class="text-sm font-medium text-[#827472]"> Slice </span>
-                <p class="text-2xl font-bold text-black">$6.50</p>
+                <p class="text-2xl font-bold text-black">RS. 399</p>
               </div>
 
               <div
@@ -658,7 +738,7 @@
             >
               <div>
                 <span class="text-sm font-medium text-[#827472]"> Pastry </span>
-                <p class="text-2xl font-bold text-black">$4.75</p>
+                <p class="text-2xl font-bold text-black">RS. 249</p>
               </div>
 
               <div
@@ -707,7 +787,7 @@
                 <span class="text-sm font-medium text-[#827472]">
                   Individual Loaf
                 </span>
-                <p class="text-2xl font-bold text-black">$5.25</p>
+                <p class="text-2xl font-bold text-black">RS. 299</p>
               </div>
 
               <div
@@ -742,7 +822,7 @@
                 Dietary & Customization Notes
               </h2>
               <p class="text-[#504442] font-normal text-sm mb-2">
-                Plant-based milks (Oat, Almond, Soy) available for +$0.60.
+                Plant-based milks (Oat, Almond, Soy) available for +RS. 40.
                 Sugar-free syrups available upon request. Speak with your
                 barista regarding gluten-conscious preparations.
               </p>
@@ -790,7 +870,7 @@
             <h1
               class="text-white text-2xl font-medium my-3 font-['Playfair_Display']"
             >
-              Studying on Campus?
+              Student in Jaipur?
             </h1>
 
             <p class="text-[#F6DDD9] font-normal text-sm mb-2 max-w-3xl">
@@ -803,7 +883,7 @@
           <!-- Button -->
           <div class="shrink-0 px-2 sm:px-0">
             <a
-              href="#"
+              href="contact.html"
               class="inline-block rounded-md bg-[#FDBD75] px-6 py-3 text-sm font-semibold text-[#2B1700] text-center hover:bg-[#e9a957] transition"
               >Start Pre-Order</a
             >
@@ -896,7 +976,7 @@
             </li>
             <li class="mb-3 text-[#F6DDD9]/80">
               <i class="fa-solid fa-location-dot text-[#FDBD75]"></i>
-              <span>142 College Avenue, Campus Town</span>
+              <span>Jaipur, Rajasthan, India</span>
             </li>
           </ul>
         </div>
@@ -933,7 +1013,7 @@
 
       <div class="mt-10 border-t border-[#F6DDD9]/10 text-center">
         <p class="mt-10 text-[#F6DDD9]/75 font-normal text-xs">
-          © 2026 Brew Cafe. Crafted for college assignment web showcase.
+          © 2026 Brew Cafe. Crafted with love in Jaipur.
         </p>
       </div>
     </footer>

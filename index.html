@@ -9,30 +9,68 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body class="max-w-[1400px] mx-auto font-['Poppins']">
-    <!-- Header Section  -->
-    <header class="max-w-full mx-auto border-b border-[#eadfdb] bg-[#fffaf8]">
-      <nav class="mx-auto flex h-16 items-center justify-between px-12">
-        <div class="flex items-center gap-3">
-          <img src="images/Brew Cafe Logo.png" alt="" class="object-contain" />
+    <!-- Header Section -->
+    <header class="w-full border-b border-[#eadfdb] bg-[#fffaf8]">
+      <nav
+        class="mx-auto flex min-h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-12 py-3"
+      >
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="index.html">
+            <img
+              src="images/Brew Cafe Logo.png"
+              alt="Brew Cafe Logo"
+              class="w-28 sm:w-32 object-contain"
+            />
+          </a>
         </div>
 
-        <div class="flex items-center gap-8">
-          <a href="index.html" class="text-sm text-[#3b211c]">Home</a>
-          <a href="menu.html" class="text-sm text-[#3b211c]">Menu</a>
-          <a href="gallery.html" class="text-sm text-[#3b211c]">Gallery</a>
-          <a href="contact.html" class="text-sm text-[#3b211c]">Contact</a>
-        </div>
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center gap-6 lg:gap-8">
+          <a
+            href="index.html"
+            class="text-sm text-[#3b211c] hover:text-[#8B1E2D] transition"
+          >
+            Home
+          </a>
 
-        <div class="flex items-center gap-3">
+          <a
+            href="menu.html"
+            class="text-sm text-[#3b211c] hover:text-[#8B1E2D] transition"
+          >
+            Menu
+          </a>
+
+          <a
+            href="gallery.html"
+            class="text-sm text-[#3b211c] hover:text-[#8B1E2D] transition"
+          >
+            Gallery
+          </a>
+
           <a
             href="contact.html"
-            class="rounded-md bg-[#3b211c] px-5 py-2 text-sm text-white"
-            >Order Online</a
+            class="text-sm text-[#3b211c] hover:text-[#8B1E2D] transition"
           >
+            Contact
+          </a>
+        </div>
+
+        <!-- Desktop Buttons -->
+        <div class="hidden md:flex items-center gap-3">
+          <a
+            href="contact.html"
+            class="rounded-md bg-[#3b211c] px-4 lg:px-5 py-2 text-sm text-white hover:bg-[#5a332b] transition"
+          >
+            Order Online
+          </a>
 
           <button
             class="flex h-8 w-8 items-center justify-center rounded-full bg-[#3b211c] text-white"
@@ -40,11 +78,62 @@
             <i class="fa-regular fa-user"></i>
           </button>
         </div>
+
+        <!-- Mobile Menu -->
+        <details class="relative md:hidden">
+          <summary
+            class="flex h-9 w-9 cursor-pointer list-none items-center justify-center rounded-md bg-[#3b211c] text-white"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </summary>
+
+          <!-- Mobile Dropdown -->
+          <div
+            class="absolute right-0 top-12 z-50 w-48 rounded-lg border border-[#eadfdb] bg-[#fffaf8] p-4 shadow-lg"
+          >
+            <div class="flex flex-col gap-3">
+              <a
+                href="index.html"
+                class="rounded-md px-3 py-2 text-sm text-[#3b211c] hover:bg-[#F6DDD9]"
+              >
+                Home
+              </a>
+
+              <a
+                href="menu.html"
+                class="rounded-md px-3 py-2 text-sm text-[#3b211c] hover:bg-[#F6DDD9]"
+              >
+                Menu
+              </a>
+
+              <a
+                href="gallery.html"
+                class="rounded-md px-3 py-2 text-sm text-[#3b211c] hover:bg-[#F6DDD9]"
+              >
+                Gallery
+              </a>
+
+              <a
+                href="contact.html"
+                class="rounded-md px-3 py-2 text-sm text-[#3b211c] hover:bg-[#F6DDD9]"
+              >
+                Contact
+              </a>
+
+              <a
+                href="contact.html"
+                class="rounded-md bg-[#3b211c] px-3 py-2 text-center text-sm text-white"
+              >
+                Order Online
+              </a>
+            </div>
+          </div>
+        </details>
       </nav>
     </header>
 
     <!-- Main Section -->
-    <main class="w-10px">
+    <main>
       <!-- Hero Section -->
       <section class="bg-[#fffaf8] px-4 sm:px-6 lg:px-12 py-8">
         <div
@@ -55,8 +144,7 @@
             <span
               class="rounded-full bg-[#f9e9df] px-3 py-1 text-xs text-[#8b5e3c]"
             >
-              CAMPUS TOWN <i class="fa-solid fa-minus"></i> OPEN TODAY UNTIL 8
-              PM
+              JAIPUR <i class="fa-solid fa-minus"></i> OPEN TODAY UNTIL 8 PM
             </span>
 
             <h1
@@ -71,9 +159,9 @@
             <p
               class="mt-5 w-full lg:w-4/5 text-sm sm:text-base leading-6 text-gray-600"
             >
-              Step into your neighborhood sanctuary for single-origin roasts,
-              buttery artisanal pastries, and quiet study corners designed for
-              inspired thinking.
+              Step into your neighborhood cafe in Jaipur for freshly brewed
+              coffee, delicious pastries, and cozy spaces designed for relaxed
+              conversations and focused work.
             </p>
 
             <div class="mt-6 flex flex-col sm:flex-row gap-4">
@@ -141,13 +229,13 @@
                   SIGNATURE ROAST
                 </p>
                 <p class="text-[#271310] text-xl font-normal">
-                  Ethiopian Yirgacheffe Pour-Over
+                  Jaipur House Blend
                 </p>
               </div>
 
               <div class="sm:ml-4">
                 <div class="w-[100px] h-6 bg-[#FFE9E6] rounded-full">
-                  <p class="text-[#845415] px-4">$4.75</p>
+                  <p class="text-[#845415] px-4">RS. 399</p>
                 </div>
               </div>
             </div>
@@ -164,7 +252,9 @@
               class="w-10 h-10 object-contain"
             />
             <div class="px-3">
-              <h3 class="font-bold text-base font-['Playfair_Display']">100% Organic</h3>
+              <h3 class="font-bold text-base font-['Playfair_Display']">
+                100% Organic
+              </h3>
               <p class="text-[#504442] text-xs">Single-origin beans</p>
             </div>
           </div>
@@ -175,7 +265,9 @@
               class="w-10 h-10 object-contain"
             />
             <div class="px-3">
-              <h3 class="font-bold text-base font-['Playfair_Display']">Fresh Daily Baking</h3>
+              <h3 class="font-bold text-base font-['Playfair_Display']">
+                Fresh Daily Baking
+              </h3>
               <p class="text-[#504442] text-xs">From 6:30 AM ovens</p>
             </div>
           </div>
@@ -186,7 +278,9 @@
               class="w-10 h-10 object-contain"
             />
             <div class="px-3">
-              <h3 class="font-bold text-base font-['Playfair_Display']">Free High-Speed Wi- Fi</h3>
+              <h3 class="font-bold text-base font-['Playfair_Display']">
+                Free High-Speed Wi- Fi
+              </h3>
               <p class="text-[#504442] text-xs">Gigabit mesh campus sync</p>
             </div>
           </div>
@@ -197,7 +291,9 @@
               class="w-10 h-10 object-contain"
             />
             <div class="px-3">
-              <h3 class="font-bold text-base font-['Playfair_Display']">Cozy Study Spaces</h3>
+              <h3 class="font-bold text-base font-['Playfair_Display']">
+                Cozy Study Spaces
+              </h3>
               <p class="text-[#504442] text-xs">Outlets at every seat</p>
             </div>
           </div>
@@ -225,26 +321,25 @@
             <p
               class="text-[#504442] text-sm sm:text-base font-normal mt-6 lg:mt-10 leading-6"
             >
-              Established just two blocks off the main university quad on
-              College Avenue, Brew Cafe started with a singular conviction: good
-              coffee is not just fuel for midnight deadlines, but an invitation
-              to pause, connect, and savor the nuance of honest craft.
+              Located in the heart of Jaipur, Brew Cafe started with a simple
+              idea: great coffee is not just a drink, but a reason to pause,
+              connect, and enjoy meaningful moments.
             </p>
 
             <p
               class="text-[#504442] text-sm sm:text-base font-normal mt-6 lg:mt-10 leading-6"
             >
               Every batch of our beans is ethically procured directly from
-              regenerative micro-lots across Latin America and East Africa. Our
-              baristas dial in the espresso extraction each morning to honor the
-              altitude, soil, and farmers who nurture every harvest .
+              regenerative micro-lots across Latin America and East Africa.
             </p>
 
             <div>
               <div
                 class="max-w-lg mt-8 lg:mt-10 p-4 sm:p-6 bg-[#FFF0EE] rounded-xl shadow-md transition duration-300 hover:shadow-lg"
               >
-                <h2 class="italic text-xl font-boldt-5 font-['Playfair_Display']">
+                <h2
+                  class="italic text-xl font-boldt-5 font-['Playfair_Display']"
+                >
                   “We don’t rush espresso. We curate genuine warmth for
                   scholars, dreamers, and early morning bookworms alike.”
                 </h2>
@@ -256,10 +351,10 @@
                     M
                   </div>
                   <div class="px-3">
-                    <h2 class="text-lg font-bold font-['Playfair_Display']">Mateo Ramirez</h2>
-                    <p class="text-sm font-normal">
-                      Head Roaster & Co-Founder
-                    </p>
+                    <h2 class="text-lg font-bold font-['Playfair_Display']">
+                      Mateo Ramirez
+                    </h2>
+                    <p class="text-sm font-normal">Head Roaster & Co-Founder</p>
                   </div>
                 </div>
               </div>
@@ -315,8 +410,8 @@
           <p
             class="text-[#504442] text-sm sm:text-base font-normal mt-6 lg:mt-8 leading-6 max-w-2xl"
           >
-            Explore the three core pillars that make our College Avenue retreat
-            the daily haven for discerning palates and focused minds.
+            Explore the three things that make Brew Cafe a cozy destination for
+            coffee lovers, food enthusiasts, and students in Jaipur.
           </p>
 
           <div class="mt-4 lg:absolute lg:bottom-0 lg:right-0">
@@ -349,7 +444,9 @@
             <div class="px-2 sm:px-3 lg:px-5 py-5">
               <img src="images/coffe-making.png" alt="" />
 
-              <h2 class="text-[#271310] text-xl font-bold my-3 font-['Playfair_Display']">
+              <h2
+                class="text-[#271310] text-xl font-bold my-3 font-['Playfair_Display']"
+              >
                 Artisan Roast Mastery
               </h2>
 
@@ -388,7 +485,9 @@
             <div class="px-2 sm:px-3 lg:px-5 py-5">
               <img src="images/Scratch Kitchen.png" alt="" />
 
-              <h2 class="text-[#271310] text-xl font-bold my-3 font-['Playfair_Display']">
+              <h2
+                class="text-[#271310] text-xl font-bold my-3 font-['Playfair_Display']"
+              >
                 Scratch Kitchen
               </h2>
 
@@ -429,7 +528,9 @@
             <div class="px-2 sm:px-3 lg:px-5 py-5">
               <img src="images/Campus Friendly.png" alt="" />
 
-              <h2 class="text-[#271310] text-xl font-bold my-3 font-['Playfair_Display']">
+              <h2
+                class="text-[#271310] text-xl font-bold my-3 font-['Playfair_Display']"
+              >
                 Cozy Work & Study Hub
               </h2>
 
@@ -471,8 +572,8 @@
             </h2>
 
             <p class="text-[#F6DDD9] text-base font-normal">
-              Order ahead for express pick-up on your walk to campus, or sit
-              down and let our baristas craft your personal midday respite.
+              Drop by Brew Cafe for a freshly prepared drink, delicious food,
+              and a relaxing break in the heart of Jaipur.
             </p>
 
             <div class="mt-6 flex flex-col sm:flex-row gap-4">
@@ -503,10 +604,12 @@
                 <span>TODAY’S FEATURED DRINK</span>
               </div>
 
-              <p class="text-[#845415] font-bold text-xl">$5.50</p>
+              <p class="text-[#845415] font-bold text-xl">RS. 460</p>
             </div>
 
-            <h3 class="font-bold text-xl p-2 font-['Playfair_Display']">Vanilla Bean Cold Foam Latte</h3>
+            <h3 class="font-bold text-xl p-2 font-['Playfair_Display']">
+              Vanilla Bean Cold Foam Latte
+            </h3>
             <p class="text-[#504442] text-xs p-2">
               Slow-steeped cold brew infused with organic Madagascar vanilla,
               topped with a velvety, house-whipped sweet cream foam and a
@@ -549,7 +652,11 @@
     <footer class="bg-[#3E2723] px-4 sm:px-6 lg:px-20 py-8">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div>
-          <h2 class="text-white text-2xl font-bold mb-5 font-['Playfair_Display']">Brew Cafe</h2>
+          <h2
+            class="text-white text-2xl font-bold mb-5 font-['Playfair_Display']"
+          >
+            Brew Cafe
+          </h2>
           <p class="text-[#F6DDD9]/90 text-sm">
             Crafting cozy moments & artisanal coffee every day.
           </p>
@@ -574,7 +681,11 @@
         </div>
 
         <div class="mx-auto">
-          <h3 class="text-white text-lg font-semibold mb-2 font-['Playfair_Display']">Quick Links</h3>
+          <h3
+            class="text-white text-lg font-semibold mb-2 font-['Playfair_Display']"
+          >
+            Quick Links
+          </h3>
 
           <ul class="text-[#F6DDD9]/80 text-sm">
             <li class="mb-2">
@@ -602,7 +713,9 @@
         </div>
 
         <div class="mx-auto">
-          <h3 class="text-white text-lg font-semibold mb-2 font-['Playfair_Display']">
+          <h3
+            class="text-white text-lg font-semibold mb-2 font-['Playfair_Display']"
+          >
             Hours & Location
           </h3>
 
@@ -619,13 +732,15 @@
             </li>
             <li class="mb-3 text-[#F6DDD9]/80">
               <i class="fa-solid fa-location-dot text-[#FDBD75]"></i>
-              <span>142 College Avenue, Campus Town</span>
+              <span>Jaipur, Rajasthan, India</span>
             </li>
           </ul>
         </div>
 
         <div class="mx-auto">
-          <h2 class="text-white text-lg font-semibold mb-2 font-['Playfair_Display']">
+          <h2
+            class="text-white text-lg font-semibold mb-2 font-['Playfair_Display']"
+          >
             Daily Brew Perks
           </h2>
           <p class="text-[#F6DDD9]/80">
@@ -654,7 +769,7 @@
 
       <div class="mt-10 border-t border-[#F6DDD9]/10 text-center">
         <p class="mt-10 text-[#F6DDD9]/75 font-normal text-xs">
-          © 2026 Brew Cafe. Crafted for college assignment web showcase.
+          © 2026 Brew Cafe. Crafted with love in Jaipur.
         </p>
       </div>
     </footer>

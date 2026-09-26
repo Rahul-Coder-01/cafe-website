@@ -9,31 +9,68 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
     />
-     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body class="max-w-[1400px] mx-auto font-['Poppins']">
     <!-- Header Section -->
-    <header class="max-w-full mx-auto border-b border-[#eadfdb] bg-[#fffaf8]">
-      <nav class="mx-auto flex h-16 items-center justify-between px-12">
-        <div class="flex items-center gap-3">
-          <img src="images/Brew Cafe Logo.png" alt="" class="object-contain" />
-          
+    <header class="w-full border-b border-[#eadfdb] bg-[#fffaf8]">
+      <nav
+        class="mx-auto flex min-h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-12 py-3"
+      >
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="index.html">
+            <img
+              src="images/Brew Cafe Logo.png"
+              alt="Brew Cafe Logo"
+              class="w-28 sm:w-32 object-contain"
+            />
+          </a>
         </div>
 
-        <div class="flex items-center gap-8">
-          <a href="index.html" class="text-sm text-[#3b211c]">Home</a>
-          <a href="menu.html" class="text-sm text-[#3b211c]">Menu</a>
-          <a href="gallery.html" class="text-sm text-[#3b211c]">Gallery</a>
-          <a href="contact.html" class="text-sm text-[#3b211c]">Contact</a>
-        </div>
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center gap-6 lg:gap-8">
+          <a
+            href="index.html"
+            class="text-sm text-[#3b211c] hover:text-[#8B1E2D] transition"
+          >
+            Home
+          </a>
 
-        <div class="flex items-center gap-3">
+          <a
+            href="menu.html"
+            class="text-sm text-[#3b211c] hover:text-[#8B1E2D] transition"
+          >
+            Menu
+          </a>
+
+          <a
+            href="gallery.html"
+            class="text-sm text-[#3b211c] hover:text-[#8B1E2D] transition"
+          >
+            Gallery
+          </a>
+
           <a
             href="contact.html"
-            class="rounded-md bg-[#3b211c] px-5 py-2 text-sm text-white"
-            >Order Online</a
+            class="text-sm text-[#3b211c] hover:text-[#8B1E2D] transition"
           >
+            Contact
+          </a>
+        </div>
+
+        <!-- Desktop Buttons -->
+        <div class="hidden md:flex items-center gap-3">
+          <a
+            href="contact.html"
+            class="rounded-md bg-[#3b211c] px-4 lg:px-5 py-2 text-sm text-white hover:bg-[#5a332b] transition"
+          >
+            Order Online
+          </a>
 
           <button
             class="flex h-8 w-8 items-center justify-center rounded-full bg-[#3b211c] text-white"
@@ -41,6 +78,57 @@
             <i class="fa-regular fa-user"></i>
           </button>
         </div>
+
+        <!-- Mobile Menu -->
+        <details class="relative md:hidden">
+          <summary
+            class="flex h-9 w-9 cursor-pointer list-none items-center justify-center rounded-md bg-[#3b211c] text-white"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </summary>
+
+          <!-- Mobile Dropdown -->
+          <div
+            class="absolute right-0 top-12 z-50 w-48 rounded-lg border border-[#eadfdb] bg-[#fffaf8] p-4 shadow-lg"
+          >
+            <div class="flex flex-col gap-3">
+              <a
+                href="index.html"
+                class="rounded-md px-3 py-2 text-sm text-[#3b211c] hover:bg-[#F6DDD9]"
+              >
+                Home
+              </a>
+
+              <a
+                href="menu.html"
+                class="rounded-md px-3 py-2 text-sm text-[#3b211c] hover:bg-[#F6DDD9]"
+              >
+                Menu
+              </a>
+
+              <a
+                href="gallery.html"
+                class="rounded-md px-3 py-2 text-sm text-[#3b211c] hover:bg-[#F6DDD9]"
+              >
+                Gallery
+              </a>
+
+              <a
+                href="contact.html"
+                class="rounded-md px-3 py-2 text-sm text-[#3b211c] hover:bg-[#F6DDD9]"
+              >
+                Contact
+              </a>
+
+              <a
+                href="contact.html"
+                class="rounded-md bg-[#3b211c] px-3 py-2 text-center text-sm text-white"
+              >
+                Order Online
+              </a>
+            </div>
+          </div>
+        </details>
       </nav>
     </header>
 
@@ -52,7 +140,7 @@
             class="bg-[#F6DDD9] text-[#845415] max-w-64 w-full mx-auto text-center rounded-2xl text-xs font-medium mt-10 p-2"
           >
             <i class="fa-solid fa-images"></i>
-            <span>VISUAL CHRONICLE  VOLUME IV</span>
+            <span>JAIPUR CAFE COLLECTION</span>
           </div>
 
           <div class="mx-auto text-center my-8">
@@ -138,11 +226,15 @@
 
               <div class="flex items-center justify-between p-4">
                 <div>
-                  <h3 class="text-[#271310] text-base font-semibold font-['Playfair_Display']">
+                  <h3
+                    class="text-[#271310] text-base font-semibold font-['Playfair_Display']"
+                  >
                     Morning Sunlit Corner
                   </h3>
 
-                  <p class="text-[#504442] font-normal text-xs mt-1">EAST GALLERY NOOK</p>
+                  <p class="text-[#504442] font-normal text-xs mt-1">
+                    EAST GALLERY NOOK
+                  </p>
                 </div>
 
                 <i
@@ -165,11 +257,15 @@
 
               <div class="flex items-center justify-between p-4">
                 <div>
-                  <h3 class="text-[#271310] text-base font-semibold font-['Playfair_Display']">
+                  <h3
+                    class="text-[#271310] text-base font-semibold font-['Playfair_Display']"
+                  >
                     Pour-Over Precision
                   </h3>
 
-                  <p class="text-[#504442] font-normal text-xs mt-1">SINGLE ORIGIN V60</p>
+                  <p class="text-[#504442] font-normal text-xs mt-1">
+                    SINGLE ORIGIN V60
+                  </p>
                 </div>
                 <i
                   class="fa-solid fa-arrow-right hover:translate-x-1 transition duration-300"
@@ -190,7 +286,9 @@
 
               <div class="flex items-center justify-between p-4">
                 <div>
-                  <h3 class="text-[#271310] text-base font-semibold font-['Playfair_Display']">
+                  <h3
+                    class="text-[#271310] text-base font-semibold font-['Playfair_Display']"
+                  >
                     Flaky Brioche & Croissants
                   </h3>
 
@@ -215,11 +313,15 @@
 
               <div class="flex items-center justify-between p-4">
                 <div>
-                  <h3 class="text-[#271310] text-base font-semibold font-['Playfair_Display']">
+                  <h3
+                    class="text-[#271310] text-base font-semibold font-['Playfair_Display']"
+                  >
                     Latte Art Swan
                   </h3>
 
-                  <p class="text-[#504442] font-normal text-xs mt-1">HOUSE VELVET POUR</p>
+                  <p class="text-[#504442] font-normal text-xs mt-1">
+                    HOUSE VELVET POUR
+                  </p>
                 </div>
                 <i
                   class="fa-solid fa-arrow-right hover:translate-x-1 transition duration-300"
@@ -231,6 +333,7 @@
         </div>
       </section>
 
+      <!-- Gallery Cards Section2 -->
       <section class="bg-[#FFF9F7] px-4 sm:px-6 lg:px-12 py-10">
         <!-- Cards Container -->
         <div class="max-w-7xl mx-auto">
@@ -247,11 +350,15 @@
 
               <div class="flex items-center justify-between p-4">
                 <div>
-                  <h3 class="text-[#271310] text-base font-semibold font-['Playfair_Display']">
+                  <h3
+                    class="text-[#271310] text-base font-semibold font-['Playfair_Display']"
+                  >
                     Cozy Study Nook
                   </h3>
 
-                  <p class="text-[#504442] font-normal text-xs mt-1">THE MEZZANINE</p>
+                  <p class="text-[#504442] font-normal text-xs mt-1">
+                    THE MEZZANINE
+                  </p>
                 </div>
 
                 <i
@@ -273,11 +380,15 @@
 
               <div class="flex items-center justify-between p-4">
                 <div>
-                  <h3 class="text-[#271310] text-base font-semibold font-['Playfair_Display']">
+                  <h3
+                    class="text-[#271310] text-base font-semibold font-['Playfair_Display']"
+                  >
                     Berry Pavlova & Desserts
                   </h3>
 
-                  <p class="text-[#504442] font-normal text-xs mt-1">SEASONAL SWEETS</p>
+                  <p class="text-[#504442] font-normal text-xs mt-1">
+                    SEASONAL SWEETS
+                  </p>
                 </div>
                 <i
                   class="fa-solid fa-arrow-right hover:translate-x-1 transition duration-300"
@@ -298,11 +409,15 @@
 
               <div class="flex items-center justify-between p-4">
                 <div>
-                  <h3 class="text-[#271310] text-base font-semibold font-['Playfair_Display']">
+                  <h3
+                    class="text-[#271310] text-base font-semibold font-['Playfair_Display']"
+                  >
                     Community Espresso Bar
                   </h3>
 
-                  <p class="text-[#504442]font-normal text-xs mt-1">CENTRAL COUNTER</p>
+                  <p class="text-[#504442] font-normal text-xs mt-1">
+                    CENTRAL COUNTER
+                  </p>
                 </div>
                 <i
                   class="fa-solid fa-arrow-right hover:translate-x-1 transition duration-300"
@@ -323,11 +438,15 @@
 
               <div class="flex items-center justify-between p-4">
                 <div>
-                  <h3 class="text-[#271310] text-base font-semibold font-['Playfair_Display']">
+                  <h3
+                    class="text-[#271310] text-base font-semibold font-['Playfair_Display']"
+                  >
                     Iced Cinnamon Matcha
                   </h3>
 
-                  <p class="text-[#504442] font-normal text-xs mt-1">SEASONAL CHILLED</p>
+                  <p class="text-[#504442] font-normal text-xs mt-1">
+                    SEASONAL CHILLED
+                  </p>
                 </div>
                 <i
                   class="fa-solid fa-arrow-right hover:translate-x-1 transition duration-300"
@@ -354,7 +473,11 @@
               </div>
 
               <div>
-                <h3 class="text-xl font-bold text-[#271310] font-['Playfair_Display']">14+</h3>
+                <h3
+                  class="text-xl font-bold text-[#271310] font-['Playfair_Display']"
+                >
+                  14+
+                </h3>
 
                 <p class="text-[9px] text-[#504442]">SINGLE ORIGINS</p>
               </div>
@@ -369,7 +492,11 @@
               </div>
 
               <div>
-                <h3 class="text-xl font-bold text-[#271310] font-['Playfair_Display']">6:30</h3>
+                <h3
+                  class="text-xl font-bold text-[#271310] font-['Playfair_Display']"
+                >
+                  6:30
+                </h3>
 
                 <p class="text-[9px] text-[#504442]">DAILY FIRST OVEN</p>
               </div>
@@ -384,7 +511,11 @@
               </div>
 
               <div>
-                <h3 class="text-xl font-bold text-[#271310] font-['Playfair_Display']">35mm</h3>
+                <h3
+                  class="text-xl font-bold text-[#271310] font-['Playfair_Display']"
+                >
+                  35mm
+                </h3>
 
                 <p class="text-[9px] text-[#504442]">FILM ARCHIVE</p>
               </div>
@@ -399,7 +530,11 @@
               </div>
 
               <div>
-                <h3 class="text-xl font-bold text-[#271310] font-['Playfair_Display']">100%</h3>
+                <h3
+                  class="text-xl font-bold text-[#271310] font-['Playfair_Display']"
+                >
+                  100%
+                </h3>
 
                 <p class="text-[9px] text-[#504442]">LOCALLY CHERISHED</p>
               </div>
@@ -420,7 +555,9 @@
                 <span>Community Spotlight</span>
               </div>
 
-              <h2 class="text-white text-2xl sm:text-3xl font-serif mb-3 font-['Playfair_Display']">
+              <h2
+                class="text-white text-2xl sm:text-3xl font-serif mb-3 font-['Playfair_Display']"
+              >
                 Share Your Table with Us
               </h2>
 
@@ -454,7 +591,7 @@
                 class="bg-[#845415] text-white px-4 py-3 rounded-lg text-xs font-medium hover:bg-[#A36A1B] transition duration-300"
               >
                 <i class="fa-brands fa-instagram mr-2"></i>
-                Follow @BrewCafeCampus
+                Follow @BrewCafeJaipur
               </a>
 
               <a
@@ -470,10 +607,15 @@
       </section>
     </main>
 
-   <footer class="bg-[#3E2723] px-4 sm:px-6 lg:px-20 py-8">
+    <!-- Footer Section -->
+     <footer class="bg-[#3E2723] px-4 sm:px-6 lg:px-20 py-8">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div>
-          <h2 class="text-white text-2xl font-bold mb-5 font-['Playfair_Display']">Brew Cafe</h2>
+          <h2
+            class="text-white text-2xl font-bold mb-5 font-['Playfair_Display']"
+          >
+            Brew Cafe
+          </h2>
           <p class="text-[#F6DDD9]/90 text-sm">
             Crafting cozy moments & artisanal coffee every day.
           </p>
@@ -498,7 +640,11 @@
         </div>
 
         <div class="mx-auto">
-          <h3 class="text-white text-lg font-semibold mb-2 font-['Playfair_Display']">Quick Links</h3>
+          <h3
+            class="text-white text-lg font-semibold mb-2 font-['Playfair_Display']"
+          >
+            Quick Links
+          </h3>
 
           <ul class="text-[#F6DDD9]/80 text-sm">
             <li class="mb-2">
@@ -526,7 +672,9 @@
         </div>
 
         <div class="mx-auto">
-          <h3 class="text-white text-lg font-semibold mb-2 font-['Playfair_Display']">
+          <h3
+            class="text-white text-lg font-semibold mb-2 font-['Playfair_Display']"
+          >
             Hours & Location
           </h3>
 
@@ -543,13 +691,15 @@
             </li>
             <li class="mb-3 text-[#F6DDD9]/80">
               <i class="fa-solid fa-location-dot text-[#FDBD75]"></i>
-              <span>142 College Avenue, Campus Town</span>
+              <span>Jaipur, Rajasthan, India</span>
             </li>
           </ul>
         </div>
 
         <div class="mx-auto">
-          <h2 class="text-white text-lg font-semibold mb-2 font-['Playfair_Display']">
+          <h2
+            class="text-white text-lg font-semibold mb-2 font-['Playfair_Display']"
+          >
             Daily Brew Perks
           </h2>
           <p class="text-[#F6DDD9]/80">
@@ -578,7 +728,7 @@
 
       <div class="mt-10 border-t border-[#F6DDD9]/10 text-center">
         <p class="mt-10 text-[#F6DDD9]/75 font-normal text-xs">
-          © 2026 Brew Cafe. Crafted for college assignment web showcase.
+          © 2026 Brew Cafe. Crafted with love in Jaipur.
         </p>
       </div>
     </footer>

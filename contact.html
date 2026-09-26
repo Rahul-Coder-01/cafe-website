@@ -17,37 +17,116 @@
     />
   </head>
 
-  <body class="font-['Poppins']">
-    <header class="max-w-full mx-auto border-b border-[#eadfdb] bg-[#fffaf8]">
-      <nav class="mx-auto flex h-16 items-center justify-between px-12">
-        <div class="flex items-center gap-3">
-          <img src="images/Brew Cafe Logo.png" alt="" class="object-contain" />
-        </div>
+  <body class="max-w-[1400px] mx-auto font-['Poppins']">
+    <!-- Header Section -->
+<header class="w-full border-b border-[#eadfdb] bg-[#fffaf8]">
 
-        <div class="flex items-center gap-8">
-          <a href="index.html" class="text-sm text-[#3b211c]">Home</a>
-          <a href="menu.html" class="text-sm text-[#3b211c]">Menu</a>
-          <a href="gallery.html" class="text-sm text-[#3b211c]">Gallery</a>
-          <a href="contact.html" class="text-sm text-[#3b211c]">Contact</a>
-        </div>
+  <nav class="mx-auto flex min-h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-12 py-3"
+  >
 
-        <div class="flex items-center gap-3">
+    <!-- Logo -->
+    <div class="flex items-center">
+      <a href="index.html">
+        <img src="images/Brew Cafe Logo.png" alt="Brew Cafe Logo" class="w-28 sm:w-32 object-contain"
+        />
+      </a>
+    </div>
+
+
+    <!-- Desktop Navigation -->
+    <div class="hidden md:flex items-center gap-6 lg:gap-8">
+
+      <a href="index.html" class="text-sm text-[#3b211c] hover:text-[#8B1E2D] transition"
+      >
+        Home
+      </a>
+
+      <a href="menu.html" class="text-sm text-[#3b211c] hover:text-[#8B1E2D] transition"
+      >
+        Menu
+      </a>
+
+      <a href="gallery.html" class="text-sm text-[#3b211c] hover:text-[#8B1E2D] transition"
+      >
+        Gallery
+      </a>
+
+      <a href="contact.html" class="text-sm text-[#3b211c] hover:text-[#8B1E2D] transition"
+      >
+        Contact
+      </a>
+
+    </div>
+
+
+    <!-- Desktop Buttons -->
+    <div class="hidden md:flex items-center gap-3">
+
+      <a
+        href="contact.html" class="rounded-md bg-[#3b211c] px-4 lg:px-5 py-2 text-sm text-white hover:bg-[#5a332b] transition"
+      >
+        Order Online
+      </a>
+
+      <button class="flex h-8 w-8 items-center justify-center rounded-full bg-[#3b211c] text-white"
+      >
+        <i class="fa-regular fa-user"></i>
+      </button>
+
+    </div>
+
+
+    <!-- Mobile Menu -->
+    <details class="relative md:hidden">
+
+      <summary class="flex h-9 w-9 cursor-pointer list-none items-center justify-center rounded-md bg-[#3b211c] text-white"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </summary>
+
+      <!-- Mobile Dropdown -->
+      <div class="absolute right-0 top-12 z-50 w-48 rounded-lg border border-[#eadfdb] bg-[#fffaf8] p-4 shadow-lg"
+      >
+
+        <div class="flex flex-col gap-3">
+
           <a
-            href="contact.html"
-            class="rounded-md bg-[#3b211c] px-5 py-2 text-sm text-white"
-            >Order Online</a
+            href="index.html" class="rounded-md px-3 py-2 text-sm text-[#3b211c] hover:bg-[#F6DDD9]"
           >
+            Home
+          </a>
 
-          <button
-            class="flex h-8 w-8 items-center justify-center rounded-full bg-[#3b211c] text-white"
+          <a
+            href="menu.html" class="rounded-md px-3 py-2 text-sm text-[#3b211c] hover:bg-[#F6DDD9]"
           >
-            <i class="fa-regular fa-user"></i>
-          </button>
+            Menu
+          </a>
+
+          <a
+            href="gallery.html" class="rounded-md px-3 py-2 text-sm text-[#3b211c] hover:bg-[#F6DDD9]"
+          >
+            Gallery
+          </a>
+
+          <a
+            href="contact.html" class="rounded-md px-3 py-2 text-sm text-[#3b211c] hover:bg-[#F6DDD9]"
+          >
+            Contact
+          </a>
+
+          <a
+            href="contact.html" class="rounded-md bg-[#3b211c] px-3 py-2 text-center text-sm text-white">
+            Order Online
+          </a>
         </div>
-      </nav>
-    </header>
+      </div>
+    </details>
+  </nav>
+</header>
 
-    <!-- Contact Heading Section -->
+ <!-- Main -->
+<main>
+       <!-- Contact Heading Section -->
     <section class="bg-[#FFF9F7] px-4 sm:px-6 lg:px-12 py-10 sm:py-12">
       <div class="max-w-7xl mx-auto">
         <div
@@ -75,6 +154,396 @@
       </div>
     </section>
 
-  
+    <!-- Contact Section -->
+    <section class="bg-[#FFF9F7] px-4 sm:px-6 lg:px-12 py-10">
+      <div class="max-w-7xl mx-auto">
+        <!-- Main Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div
+            class="lg:col-span-2 bg-white rounded-xl overflow-hidden shadow-sm"
+          >
+            <!-- Form Header -->
+            <div class="bg-[#FFF9F7] px-5 py-5">
+              <div class="flex items-center justify-between">
+                <div>
+                  <h2
+                    class="text-lg font-semibold text-[#271310] font-['Playfair_Display']"
+                  >
+                    Send an Inquiry
+                  </h2>
+
+                  <p class="text-[10px] text-[#504442] mt-1">
+                    Fill out the brief form below and our team will get back to
+                    you promptly.
+                  </p>
+                </div>
+
+                <div
+                  class="w-8 h-8 bg-[#F6DDD9] rounded-full flex items-center justify-center"
+                >
+                  <i class="fa-regular fa-envelope text-[#845415] text-xs"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Form Section -->
+            <form class="p-5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label
+                    class="block text-[10px] font-medium text-[#271310] mb-2"
+                  >
+                    Full Name
+                  </label>
+
+                  <input
+                    type="text"
+                    placeholder="Enter Your Name"
+                    class="w-full bg-[#FCEFED] rounded-md px-3 py-3 text-xs outline-none"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    class="block text-[10px] font-medium text-[#271310] mb-2"
+                  >
+                    Phone Number
+                  </label>
+
+                  <input
+                    type="tel"
+                    placeholder="Enter Your Number"
+                    class="w-full bg-[#FCEFED] rounded-md px-3 py-3 text-xs outline-none"
+                  />
+                </div>
+              </div>
+
+              <div class="mt-4">
+                <label
+                  class="block text-[10px] font-medium text-[#271310] mb-2"
+                >
+                  Service / Inquiry Type
+                </label>
+
+                <select
+                  class="w-full bg-[#FCEFED] rounded-md px-3 py-3 text-xs outline-none"
+                >
+                  <option>General Inquiry</option>
+                  <option>Book a Table</option>
+                  <option>Study Group</option>
+                  <option>Private Event</option>
+                </select>
+              </div>
+
+              <div class="mt-4">
+                <label
+                  class="block text-[10px] font-medium text-[#271310] mb-2"
+                >
+                  Your Message
+                </label>
+
+                <textarea
+                  rows="5"
+                  placeholder="Tell us what you have in mind..."
+                  class="w-full bg-[#FCEFED] rounded-md px-3 py-3 text-xs outline-none resize-none"
+                ></textarea>
+              </div>
+
+              <div class="flex flex-col sm:flex-row sm:items-center gap-4 mt-5">
+                <button
+                  type="submit"
+                  class="bg-[#271310] text-white px-5 py-3 rounded-md text-xs font-medium hover:bg-[#845415] transition duration-300"
+                >
+                  Send Message
+                  <span class="ml-1">></span>
+                </button>
+
+                <p class="text-[9px] text-[#504442]">
+                  We reply within 24 hours during business days.
+                </p>
+              </div>
+            </form>
+          </div>
+          <!-- Cafe Address -->
+          <div class="space-y-6">
+            <div class="bg-white rounded-xl p-5 shadow-sm">
+              <div class="flex gap-3">
+                <div
+                  class="w-8 h-8 shrink-0 bg-[#FCEFED] rounded-md flex items-center justify-center"
+                >
+                  <i
+                    class="fa-solid fa-location-dot text-[#845415] text-xs"
+                  ></i>
+                </div>
+
+                <div>
+                  <h3
+                    class="text-xs font-semibold text-[#271310] font-['Playfair_Display']"
+                  >
+                    Cafe Address
+                  </h3>
+
+                  <p class="text-[9px] text-[#504442] mt-1">
+                   C-Scheme, Jaipur, Rajasthan, India
+                  </p>
+
+                  <p class="text-[8px] text-[#845415] mt-1">
+                    Directly across from the University Library
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-3 mt-5">
+                <div
+                  class="w-8 h-8 shrink-0 bg-[#FCEFED] rounded-md flex items-center justify-center"
+                >
+                  <i class="fa-regular fa-clock text-[#845415] text-xs"></i>
+                </div>
+
+                <div class="w-full">
+                  <div class="flex items-center justify-between">
+                    <h3
+                      class="text-xs font-semibold text-[#271310] font-['Playfair_Display']"
+                    >
+                      Business Hours
+                    </h3>
+
+                    <span
+                      class="bg-[#FCEFED] text-[#845415] px-2 py-1 rounded-full text-[7px] font-medium"
+                    >
+                      Open Today
+                    </span>
+                  </div>
+
+                  <div class="text-[9px] text-[#504442] mt-2 space-y-1">
+                    <div class="flex justify-between">
+                      <span>Monday – Friday</span>
+                      <span>7:00 AM – 8:00 PM</span>
+                    </div>
+
+                    <div class="flex justify-between">
+                      <span>Saturday</span>
+                      <span>8:00 AM – 9:00 PM</span>
+                    </div>
+
+                    <div class="flex justify-between">
+                      <span>Sunday</span>
+                      <span>8:00 AM – 7:00 PM</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex gap-3 mt-5">
+                <div
+                  class="w-8 h-8 shrink-0 bg-[#FCEFED] rounded-md flex items-center justify-center"
+                >
+                  <i
+                    class="fa-solid fa-address-card text-[#845415] text-xs"
+                  ></i>
+                </div>
+
+                <div>
+                  <h3
+                    class="text-xs font-semibold text-[#271310] font-['Playfair_Display']"
+                  >
+                    Phone & Direct Email
+                  </h3>
+
+                  <p class="text-[9px] text-[#504442] mt-1">
+                    <i class="fa-solid fa-phone"></i>
+                    +91 98765 43210
+                  </p>
+
+                  <p class="text-[9px] text-[#504442] mt-1">
+                    <i class="fa-solid fa-envelope"></i>
+                    hello@brew-cafe.com
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Study Group Booking Card -->
+            <div class="px-4 py-10">
+                <div class="max-w-2xl mx-auto bg-[#FCE9E6] rounded-2xl p-6 sm:p-7">
+                  <div class="flex items-center gap-3 mb-3">
+                    <span class="text-[#8B5E1A] text-xl"> 
+                        <i class="fa-solid fa-users"></i>
+                    </span>
+
+                    <h2
+                      class="text-xl sm:text-2xl font-semibold text-[#2D2422] font-['Playfair_Display']"
+                    >
+                      Study Group Bookings
+                    </h2>
+                  </div>
+
+                  <p class="text-[#5F5350] text-sm sm:text-base leading-6">
+                    Need the 8-person timber harvest table for finals week or
+                    seminar prep? Indicate your preferred time slot and group
+                    size in your message!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP CARD -->
+    <section class="bg-white rounded-xl p-3 shadow-sm">
+      <!-- Map -->
+      <div class="w-full h-32 sm:h-40 overflow-hidden rounded-lg">
+        <iframe
+          src="https://www.google.com/maps?q=C-Scheme%2C%20Jaipur%2C%20Rajasthan&output=embed"
+          class="w-full h-full border-0"
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <!-- Map Bottom -->
+      <div
+        class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mt-3"
+      >
+        <p class="text-[9px] text-[#504442]">Corner of 3rd & College Ave</p>
+
+        <a
+          href="#"
+          class="bg-[#FCEFED] text-[#271310] px-3 py-2 rounded-md text-[9px] font-medium text-center hover:bg-[#845415] hover:text-white transition duration-300"
+        >
+          Get Directions
+        </a>
+      </div>
+    </section>
+
+
+</main>
+
+     <!-- Footer Section -->
+    <footer class="bg-[#3E2723] px-4 sm:px-6 lg:px-20 py-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <h2
+            class="text-white text-2xl font-bold mb-5 font-['Playfair_Display']"
+          >
+            Brew Cafe
+          </h2>
+          <p class="text-[#F6DDD9]/90 text-sm">
+            Crafting cozy moments & artisanal coffee every day.
+          </p>
+
+          <ul class="flex h-16 gap-3 mt-5">
+            <li
+              class="flex h-8 w-8 items-center justify-center shrink-0 rounded-full bg-white/10 text-white font-bold text-center"
+            >
+              <a href="#"><i class="fa-regular fa-camera"></i></a>
+            </li>
+            <li
+              class="flex h-8 w-8 items-center justify-center shrink-0 rounded-full bg-white/10 text-white font-bold text-center"
+            >
+              <a href="#"><i class="fa-solid fa-earth-asia"></i></a>
+            </li>
+            <li
+              class="flex h-8 w-8 items-center justify-center shrink-0 rounded-full bg-white/10 text-white font-bold text-center"
+            >
+              <a href="#"><i class="fa-regular fa-message"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mx-auto">
+          <h3
+            class="text-white text-lg font-semibold mb-2 font-['Playfair_Display']"
+          >
+            Quick Links
+          </h3>
+
+          <ul class="text-[#F6DDD9]/80 text-sm">
+            <li class="mb-2">
+              <a href="#home" class="transition hover:text-[#FDBD75]">Home</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="transition hover:text-[#FDBD75]"
+                >Our Story / Highlights</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="#menu" class="transition hover:text-[#FDBD75]">Menu</a>
+            </li>
+            <li class="mb-2">
+              <a href="#gallery" class="transition hover:text-[#FDBD75]"
+                >Gallery</a
+              >
+            </li>
+            <li class="mb-2">
+              <a href="#contact" class="transition hover:text-[#FDBD75]"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="mx-auto">
+          <h3
+            class="text-white text-lg font-semibold mb-2 font-['Playfair_Display']"
+          >
+            Hours & Location
+          </h3>
+
+          <ul class="text-white text-xs font-semibold">
+            <li class="mb-3">
+              <i class="fa-regular fa-clock text-[#FDBD75]"></i>
+              <span>Mon - Fri</span>
+              <p class="px-5 text-[#F6DDD9]/80">7:00 AM - 8:00 PM</p>
+            </li>
+            <li class="mb-3">
+              <i class="fa-regular fa-clock text-[#FDBD75]"></i>
+              <span>Sat - Sun</span>
+              <p class="px-5 text-[#F6DDD9]/80">8:00 AM - 9:00 PM</p>
+            </li>
+            <li class="mb-3 text-[#F6DDD9]/80">
+              <i class="fa-solid fa-location-dot text-[#FDBD75]"></i>
+              <span>Jaipur, Rajasthan, India</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mx-auto">
+          <h2
+            class="text-white text-lg font-semibold mb-2 font-['Playfair_Display']"
+          >
+            Daily Brew Perks
+          </h2>
+          <p class="text-[#F6DDD9]/80">
+            Subscribe for sunrise roasts, secret bakery drops, and collegiate
+            study lounge perks.
+          </p>
+          <form class="mt-4 flex flex-col sm:flex-row gap-2">
+            <input
+              type="email"
+              placeholder="Your email address"
+              class="rounded-md w-full p-2"
+            />
+            <button
+              type="submit"
+              class="rounded-md bg-[#845415] px-6 py-2 text-sm font-semibold text-white transition hover:bg-[#FDBD75] hover:text-[#3E2723]"
+            >
+              Join
+            </button>
+          </form>
+
+          <p class="text-[#F6DDD9]/80 mt-2">
+            Fresh beans roasted every Tuesday & Friday.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-10 border-t border-[#F6DDD9]/10 text-center">
+        <p class="mt-10 text-[#F6DDD9]/75 font-normal text-xs">
+          © 2026 Brew Cafe. Crafted with love in Jaipur.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
